@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Горошко](https://up.htmlacademy.ru/adaptive/16/user/870509).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Налимовао](https://htmlacademy.ru/profile/tuetfe).
 
 ---
 
