@@ -1,7 +1,11 @@
 .copyright {
   &__link {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    text-decoration: none;
   }
-
+  &__text {
+    @include texter($greyish, 16px, 16px, 400);
+  }
 }

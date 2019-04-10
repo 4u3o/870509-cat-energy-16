@@ -3,7 +3,9 @@
   background-size: cover;
   @include wrapper;
   &__title {
-    @include text(14px);
+    text-align: center;
+    text-transform: uppercase;
+    @include texter($white, 14px, 14px, 400);
   }
   &__product {
     width: 280px;

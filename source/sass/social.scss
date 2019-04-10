@@ -1,7 +1,10 @@
 .social {
+  width: fit-content;
+  @include center-pos;
+  @include list;
+  margin-top: 0;
+  margin-bottom: 0;
   &__item {
     display: inline-block;
   }
-  padding-bottom: 20px;
-  @include border-bot;
 }
