@@ -1,0 +1,8 @@
+.button {
+  display: block;
+  color: $white;
+  text-align: center;
+  @include link();
+  padding: 12px;
+  background-color: $leaf;
+}

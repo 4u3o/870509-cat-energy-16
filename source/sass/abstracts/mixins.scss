@@ -1,0 +1,36 @@
+// Враппер
+@mixin wrapper($wrapp-padding: 20px) {
+  padding-left: $wrapp-padding;
+  padding-right: $wrapp-padding;
+}
+// Центровщик
+@mixin center-pos($center-marg: auto) {
+  margin-right: $center-marg;
+  margin-left: $center-marg;
+}
+// ССылки
+@mixin link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+// текст по середине, size=height
+@mixin text($height: 20px) {
+  text-align: center;
+  font-size: $height;
+  line-height: $height;
+  font-weight: 400;
+  margin: 0;
+}
+@mixin texter($color, $size, $height, $weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+@mixin list {
+  list-style: none;
+  padding: 0;
+}
+@mixin border-bot {
+  border-bottom: 1px solid $black;
+}

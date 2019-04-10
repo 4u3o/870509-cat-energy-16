@@ -1,0 +1,7 @@
+.page-main {
+  background-color: $leaf;
+  &__title {
+    color: $white;
+    @include text(36px);
+  }
+}

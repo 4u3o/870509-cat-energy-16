@@ -1,0 +1,21 @@
+.page-footer {
+  background-color: $lightgrey;
+  &__wrapper {
+    @include wrapper;
+    padding-top: 40px;
+    padding-bottom: 22px;
+  }
+  &__logo {
+    padding: 30px 70px;
+    @include center-pos;
+    border-bottom: 1px solid $black;
+  }
+  &__logo-link {
+    display: block;
+    width: 128px;
+    @include center-pos;
+  }
+  &__list {
+    @include list;
+  }
+}

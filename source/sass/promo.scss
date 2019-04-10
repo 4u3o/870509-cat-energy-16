@@ -1,0 +1,13 @@
+.promo {
+  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-size: cover;
+  @include wrapper;
+  &__title {
+    @include text(14px);
+  }
+  &__product {
+    width: 280px;
+    @include center-pos();
+  }
+
+}
