@@ -1,0 +1,18 @@
+.item-card {
+  &__block {
+    display: flex;
+  }
+  &__title-link {
+    @include link;
+  }
+  &__title {
+    @include texter($black, 16px, 20px, 400);
+  }
+  &__value {
+    @include texter($greyish, 12px, 16px, 400);
+    text-align: right;
+  }
+  &__parameter {
+    @include texter($greyish, 12px, 16px, 400);
+  }
+}

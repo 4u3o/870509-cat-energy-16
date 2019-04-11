@@ -14,12 +14,18 @@
     padding-bottom: 20px;
   }
   &__title {
+    position: relative;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 37px;
     text-align: left;
     padding-left: 75px;
     padding-top: 40px;
+  }
+  &__title::before {
+    @include pseudo(50px, 50px, $leaf);
+    border-radius: 25px;
+    top: 40px;
   }
   &__description {
     padding-bottom: 24px;

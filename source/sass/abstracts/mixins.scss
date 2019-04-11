@@ -34,3 +34,17 @@
 @mixin border-bot {
   border-bottom: 1px solid $black;
 }
+@mixin pseudo($width: 10px, $height: 10px, $color: $greyish) {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+@mixin padding-vert($top: 25px, $bot: $top) {
+  padding-top: $top;
+  padding-bottom: $bot;
+}
