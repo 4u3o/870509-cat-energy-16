@@ -2,17 +2,17 @@
   @include border-bot;
 
   &__wrapper {
-  @include wrapper;
-  @include padding-vert;
-  display: flex;
-  flex-direction: column;
+    @include wrapper;
+    @include padding-vert;
+    display: flex;
+    flex-direction: column;
   }
 
   &__toggle {
     @include center-pos;
     @include sizer(31px);
     display: block;
-    background-image: url('../img/icon-plus.svg');
+    background-image: url("../img/icon-plus.svg");
     background-repeat: no-repeat;
     margin-bottom: 25px;
   }
