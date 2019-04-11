@@ -34,6 +34,10 @@
 @mixin border-bot {
   border-bottom: 1px solid $black;
 }
+@mixin sizer($width: 10px, $height: $width) {
+  width: $width;
+  height: $height;
+}
 @mixin pseudo($width: 10px, $height: 10px, $color: $greyish) {
   content: '';
   position: absolute;

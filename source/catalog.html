@@ -14,20 +14,20 @@
         <button class='main-nav__toggle'  type='button'>
           <span class='visually-hidden'>Меню</span>
         </button>
-        <nav class='main-nav'>
-          <ul class='main-nav__list site-list'>
-            <li class='site-list__item site-list__item--active'>
-              <a class='link' href='index.html'>Главная</a>
-            </li>
-            <li class='site-list__item'>
-              <a class='link' href='catalog.html'>Каталог продукции</a>
-            </li>
-            <li class='site-list__item'>
-              <a class='link' href='#'>Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class='main-nav'>
+        <ul class='main-nav__list site-list'>
+          <li class='site-list__item site-list__item--active'>
+            <a class='link' href='index.html'>Главная</a>
+          </li>
+          <li class='site-list__item'>
+            <a class='link' href='catalog.html'>Каталог продукции</a>
+          </li>
+          <li class='site-list__item'>
+            <a class='link' href='#'>Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class='page-main'>
       <div class='page-main__wrapper'>
@@ -311,12 +311,14 @@
           </li>
         </ul>
         <div class='load-moar'>
-          <a class='load-moar__toggle' href='new-page.html'>
-            <span class='visually-hidden'>Показать остальные товары</span>
-          </a>
-          <b>Показать еще 100500 товаров</b>
-          <p>На самом деле вкусов гораздо больше!</p>
-          <a class='load-moar__button button button--grey' href='new-page.html'>Показать все</a>
+          <div class='load-moar__wrapper'>
+            <a class='load-moar__toggle' href='new-page.html'>
+              <span class='visually-hidden'>Показать остальные товары</span>
+            </a>
+            <b class='load-moar__attention'>Показать еще 100500 товаров</b>
+            <p class='load-moar__text'>На самом деле вкусов гораздо больше!</p>
+            <a class='load-moar__button button button--grey' href='new-page.html'>Показать все</a>
+          </div>
         </div>
       </section>
     </main>
