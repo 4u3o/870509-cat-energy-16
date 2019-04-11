@@ -1,24 +1,28 @@
 .load-moar {
   @include border-bot;
+
   &__wrapper {
   @include wrapper;
   @include padding-vert;
   display: flex;
   flex-direction: column;
   }
+
   &__toggle {
-    display: block;
     @include center-pos;
+    @include sizer(31px);
+    display: block;
     background-image: url('../img/icon-plus.svg');
     background-repeat: no-repeat;
-    @include sizer(31px);
     margin-bottom: 25px;
   }
+
   &__attention {
     @include texter($black, 16px, 20px, 400);
     text-transform: uppercase;
     align-self: center;
   }
+
   &__text {
     @include texter($greyish, 12px, 16px, 400);
     text-align: center;

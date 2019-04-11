@@ -1,16 +1,18 @@
 .page-main {
   &__wrapper {
     @include wrapper;
+    @include border-bot;
     padding-top: 30px;
     padding-bottom: 30px;
-    @include border-bot;
   }
+
   &__title {
-    color: $white;
     @include text(36px);
+    color: $white;
   }
+
   &__title--catalog {
-    text-align: left;
     @include texter($black, 36px, 60px, 400);
+    text-align: left;
   }
 }
