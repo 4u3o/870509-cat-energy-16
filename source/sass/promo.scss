@@ -9,7 +9,6 @@
   }
   &__product {
     width: 280px;
-    @include center-pos();
+    @include center-pos;
   }
-
 }
