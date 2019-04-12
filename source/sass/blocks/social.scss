@@ -1,0 +1,11 @@
+.social {
+  @include list;
+  @include center-pos;
+  width: fit-content;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &__item {
+    display: inline-block;
+  }
+}

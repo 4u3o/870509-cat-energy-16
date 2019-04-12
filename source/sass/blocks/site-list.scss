@@ -1,0 +1,16 @@
+.site-list {
+  @include center-pos;
+  @include text;
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    padding: 22px 70px;
+    font-weight: 500;
+    border-bottom: 1px solid $black;
+  }
+
+  &__item:first-child {
+    border-top: 1px solid $black;
+  }
+}

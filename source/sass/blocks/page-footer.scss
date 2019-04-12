@@ -1,0 +1,31 @@
+.page-footer {
+  background-color: $lightgrey;
+
+  &__wrapper {
+    @include wrapper;
+    padding-top: 40px;
+    padding-bottom: 22px;
+  }
+
+  &__logo {
+    @include center-pos;
+    padding: 30px 70px;
+    border-bottom: 1px solid $black;
+  }
+
+  &__logo-link {
+    @include center-pos;
+    display: block;
+    width: 128px;
+  }
+
+  &__list {
+    @include border-bot;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__copyright {
+    padding-top: 20px;
+  }
+}

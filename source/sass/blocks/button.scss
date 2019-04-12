@@ -1,0 +1,13 @@
+.button {
+  @include link();
+  display: block;
+  color: $white;
+  text-align: center;
+  padding: 12px;
+  background-color: $leaf;
+
+  &--grey {
+    background-color: $lightgrey;
+    color: $greyish;
+  }
+}

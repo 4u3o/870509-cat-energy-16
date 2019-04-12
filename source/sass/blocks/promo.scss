@@ -1,0 +1,16 @@
+.promo {
+  @include wrapper;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: cover;
+
+  &__title {
+    @include texter($white, 14px, 14px, 400);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__product {
+    @include center-pos;
+    width: 280px;
+  }
+}
