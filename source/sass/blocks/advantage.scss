@@ -1,11 +1,13 @@
 
 .advantage {
-  @include wrapper;
+  width: 280px;
+  @include center-pos;
   background-color: white;
   padding-bottom: 20px;
 
   &__title {
     @include texter($black, 36px, 60px, 400);
+    text-align: left;
   }
 
   &__list {
@@ -15,6 +17,7 @@
   &__item {
     @include texter($greyish, 14px, 18px, 400);
     position: relative;
+    font-family: Arial;
     padding-left: 80px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -22,5 +25,7 @@
 
   &__item::before {
     @include pseudo(60px, 60px, $leaf);
+    top: 4px;
+    left: 0px;
   }
 }

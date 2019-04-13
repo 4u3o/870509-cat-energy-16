@@ -1,5 +1,5 @@
 .button {
-  @include link();
+  @include link;
   display: block;
   color: $white;
   text-align: center;

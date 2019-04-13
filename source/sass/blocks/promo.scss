@@ -20,6 +20,11 @@
   }
 }
 
+.promo__button {
+  @include center-pos;
+  width: 280px;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
     display: flex;
@@ -28,18 +33,22 @@
     margin-left: 120px;
     background-image: none;
   }
+
   .promo__title {
     color: $black;
     text-align: left;
   }
+
   .promo__product {
     order: 1;
     margin-top: -80px;
     z-index: 1;
   }
+
   .promo__button {
     width: 245px;
     order: 0;
+    margin-left: 0;
     z-index: 2;
   }
 }

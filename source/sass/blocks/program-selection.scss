@@ -1,5 +1,6 @@
 .program-selection {
-  @include wrapper;
+  @include center-pos;
+  width: 280px;
   background-color: white;
   padding-bottom: 20px;
 
@@ -10,18 +11,18 @@
   &__item {
     list-style: none;
     background-color: $lightgrey;
+    @include center-pos;
   }
 
   &__partition {
-    @include wrapper;
     padding-bottom: 20px;
+    margin: 20px;
   }
 
   &__title {
+    @include texter($black, 24px, 37px, 400);
     position: relative;
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 37px;
     text-align: left;
     padding-left: 75px;
     padding-top: 40px;
@@ -30,11 +31,13 @@
   &__title::before {
     @include pseudo(50px, 50px, $leaf);
     border-radius: 25px;
-    top: 40px;
+    top: 35px;
+    left: 0px;
   }
 
   &__description {
     @include texter($greyish, 14px, 18px, 400);
+    font-family: Arial;
     padding-bottom: 24px;
     border-bottom: 1px solid black;
   }
@@ -42,5 +45,49 @@
   &__link {
     @include texter($black, 16px, 16px, 400);
     @include link;
+    padding: 5px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    width: 708px;
+  }
+
+  .program-selection__partition {
+    position: relative;
+    margin: 55px;
+    padding-right: 220px;
+
+    &::after {
+      @include pseudo(200px, 200px, $leaf);
+      border-radius: 100px;
+      top: 40px;
+      right: 0px;
+    }
+  }
+
+  .program-selection__title {
+    @include texter($black, 36px, 37px, 400);
+    padding-left: 0px;
+  }
+
+  .program-selection__title::before {
+    content: none;
+  }
+
+  .program-selection__description {
+    @include texter($black, 16px, 24px, 400);
+    border-bottom: none;
+  }
+
+  .program-selection__link {
+    @include texter($black, 20px, 20px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
   }
 }
