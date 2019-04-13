@@ -2,15 +2,18 @@
   background-color: $lightgrey;
 
   &__wrapper {
-    @include wrapper;
+    @include center-pos;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
     padding-top: 40px;
     padding-bottom: 22px;
   }
 
   &__logo {
     @include center-pos;
+    @include border-bot;
     padding: 30px 70px;
-    border-bottom: 1px solid $black;
   }
 
   &__logo-link {
@@ -28,5 +31,36 @@
   &__copyright {
     font-family: Arial;
     padding-top: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+
+  }
+
+  .page-footer__wrapper {
+    width: 708px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-footer__list {
+    width: 30%;
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
   }
 }
