@@ -1,4 +1,3 @@
-
 .advantage {
   width: 280px;
   @include center-pos;
@@ -17,15 +16,72 @@
   &__item {
     @include texter($greyish, 14px, 18px, 400);
     position: relative;
+    display: flex;
     font-family: Arial;
-    padding-left: 80px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    margin-bottom: 20px;
+    z-index: 1;
   }
 
-  &__item::before {
-    @include pseudo(60px, 60px, $leaf);
-    top: 4px;
-    left: 0px;
+  &__number {
+    display: none;
+  }
+
+  .advantage__icon {
+    display: block;
+    @include sizer(60px);
+    background-color: $leaf;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    width: 708px;
+
+    .advantage__number {
+      display: block;
+      position: absolute;
+      @include texter($lightgrey, 281px, 281px, 400);
+      font-family: "Oswald";
+      top: -40px;
+      left: 120px;
+      z-index: -1;
+    }
+
+    .advantage__title {
+      @include texter($black, 60px, 60px, 400);
+    }
+
+    .advantage__icon {
+      @include sizer(80px);
+      position: relative;
+      margin-bottom: 35px;
+    }
+
+    .advantage__item {
+      @include texter($greyish, 16px, 24px, 400);
+      width: calc(50% - 80px);
+      min-height: 230px;
+      flex-direction: column;
+      margin-right: auto;
+      margin-bottom: 80px;
+
+      &:nth-of-type(2n) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
   }
 }
