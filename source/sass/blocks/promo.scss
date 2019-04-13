@@ -1,16 +1,51 @@
 .promo {
-  @include wrapper;
+  width: 320px;
+  @include center-pos;
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &__title {
     @include texter($white, 14px, 14px, 400);
+    display: block;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   &__product {
     @include center-pos;
     width: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+    margin-left: 120px;
+    background-image: none;
+  }
+  .promo__title {
+    color: $black;
+    text-align: left;
+  }
+  .promo__product {
+    order: 1;
+    margin-top: -80px;
+    z-index: 1;
+  }
+  .promo__button {
+    width: 245px;
+    order: 0;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
   }
 }

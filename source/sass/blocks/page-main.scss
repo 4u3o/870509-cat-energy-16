@@ -9,10 +9,25 @@
   &__title {
     @include text(36px);
     color: $white;
+    padding-top: 30px;
   }
 
   &__title--catalog {
     @include texter($black, 36px, 60px, 400);
     text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include texter($black, 60px, 60px, 400);
+    width: 450px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
   }
 }
