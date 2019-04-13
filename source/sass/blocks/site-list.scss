@@ -1,16 +1,31 @@
 .site-list {
   @include center-pos;
   @include text;
-  list-style: none;
-  padding: 0;
 
   &__item {
-    padding: 22px 70px;
+    padding: 22px 0px;
     font-weight: 500;
     border-bottom: 1px solid $black;
   }
+}
 
-  &__item:first-child {
-    border-top: 1px solid $black;
+@media (min-width: $tablet-width) {
+  .site-list  {
+    @include center-pos(20px);
+  }
+
+  .site-list__item {
+    border-bottom: none;
+    padding: 20px;
+  }
+
+  .site-list__item:first-child {
+    border-top: none
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
   }
 }
