@@ -1,11 +1,8 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-header__positioner {
   @include center-pos;
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__wrapper {
@@ -16,14 +13,10 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include center-pos;
-    padding: 10px 0px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .page-header__positioner {
     width: 708px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .page-header__wrapper {

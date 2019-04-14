@@ -1,10 +1,10 @@
 .link {
   @include link;
-  color: $black;
+  @include texter($black, 20px, 20px, 500);
 }
 
 @media (min-width: $tablet-width) {
-  .link{
+  .link {
     @include texter($black, 18px, 25px, 400);
   }
 }

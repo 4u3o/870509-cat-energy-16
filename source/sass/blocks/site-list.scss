@@ -1,22 +1,22 @@
 .site-list {
-  @include center-pos;
-  @include text;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
   &__item {
     padding: 22px 0px;
-    font-weight: 500;
     border-bottom: 1px solid $black;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-list  {
-    @include center-pos(20px);
+    flex-direction: row;
   }
 
   .site-list__item {
     border-bottom: none;
-    padding: 20px;
+    padding: 20px 15px;
   }
 
   .site-list__item:first-child {
