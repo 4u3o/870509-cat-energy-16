@@ -10,7 +10,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-
+  .link {
+    @include texter($white, 20px, 25px, 400);
   }
 }

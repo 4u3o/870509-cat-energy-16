@@ -87,7 +87,38 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
+  .program-selection {
+    width: 1220px;
+  }
 
+  .program-selection__title {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 164px;
+
+    &::before {
+      @include pseudo(100px, 100px, $leaf);
+      border-radius: 50px;
+      top: 15px;
+      left: 0px;
+    }
+  }
+
+  .program-selection__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-selection__item {
+    margin: 0;
+    width: calc(50% - 40px);
+  }
+
+  .program-selection__partition {
+    padding-right: 0px;
+
+    &::after {
+      content: none;
+    }
   }
 }
