@@ -2,3 +2,15 @@
   @include link;
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .link{
+    @include texter($black, 18px, 25px, 400);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+
+  }
+}

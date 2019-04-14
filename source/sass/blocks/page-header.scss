@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.page-header__positioner {
+  @include center-pos;
+  width: 320px;
+}
+
 .page-header__wrapper {
   @include wrapper;
   @include padding-vert(10px);
@@ -11,7 +16,14 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    @include center-pos;
+    padding: 10px 0px;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__positioner {
+    width: 708px;
   }
 
   .page-header__wrapper {
@@ -20,7 +32,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-
+  .page-header {
+    width: 1220px;
   }
 }
