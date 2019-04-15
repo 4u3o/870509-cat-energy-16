@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
 
-  &__item {
-    padding: 22px 0px;
-    border-bottom: 1px solid $black;
-  }
+.site-list__item {
+  padding: 22px 0px;
+  border-bottom: 1px solid $black;
 }
 
 @media (min-width: $tablet-width) {

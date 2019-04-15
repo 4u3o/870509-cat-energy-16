@@ -42,9 +42,9 @@
   }
 
   .advantage__number {
+    @include texter($lightgrey, 281px, 281px, 400);
     display: block;
     position: absolute;
-    @include texter($lightgrey, 281px, 281px, 400);
     font-family: "Oswald";
     top: -40px;
     left: 90px;

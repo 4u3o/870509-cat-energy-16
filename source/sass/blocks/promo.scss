@@ -1,23 +1,23 @@
 .promo {
-  width: 320px;
   @include center-pos;
+  width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+}
 
-  &__title {
-    @include texter($white, 14px, 14px, 400);
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+.promo__title {
+  @include texter($white, 14px, 14px, 400);
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-  &__product {
-    @include center-pos;
-    width: 280px;
-  }
+.promo__product {
+  @include center-pos;
+  width: 280px;
 }
 
 .promo__button {
@@ -64,10 +64,6 @@
   .promo__wrapper {
     width: 1440px;
     padding: 0 110px 200px 190px;
-  }
-
-  .promo {
-
   }
 
   .promo__title {

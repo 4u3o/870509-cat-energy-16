@@ -1,8 +1,5 @@
-.main-nav {
-
-  .main-nav__list {
-    @include list;
-  }
+.main-nav__list {
+  @include list;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,9 +7,6 @@
 
   }
 
-  .main-nav__list  {
-
-  }
 }
 
 @media (min-width: $desktop-width) {
