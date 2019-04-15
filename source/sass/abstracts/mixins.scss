@@ -42,8 +42,8 @@
   margin: 0;
 }
 
-@mixin border-bot {
-  border-bottom: 1px solid $black;
+@mixin border-bot($color: $black) {
+  border-bottom: 1px solid $color;
 }
 
 @mixin sizer($width: 10px, $height: $width) {

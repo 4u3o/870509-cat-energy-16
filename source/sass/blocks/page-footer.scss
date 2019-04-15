@@ -12,7 +12,7 @@
 
   &__logo {
     @include center-pos;
-    @include border-bot;
+    @include border-bot($greyish);
     padding: 30px 70px;
   }
 
@@ -53,8 +53,9 @@
   }
 
   .page-footer__list {
-    width: 30%;
+    width: 20%;
     border-bottom: none;
+    background-color: rgba(100, 100, 100, 0.3);
   }
 
 }

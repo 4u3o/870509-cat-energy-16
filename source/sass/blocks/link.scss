@@ -10,7 +10,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .index-header {
+
+    .link {
+      color: $white;
+    }
+  }
+
   .link {
-    @include texter($white, 20px, 25px, 400);
+    @include texter($black, 20px, 25px, 400);
   }
 }

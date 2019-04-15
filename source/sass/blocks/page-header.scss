@@ -8,12 +8,13 @@
 .page-header__wrapper {
   @include wrapper;
   @include padding-vert(10px);
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $greyish;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 708px;
+    width: 768px;
+    padding: 0 30px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -21,12 +22,23 @@
 
   .page-header__wrapper {
     border-bottom: none;
+    padding: 10px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: relative;
     width: 1220px;
+  }
 
+  .index-header::after {
+    @include pseudo(720px, 696px, $leaf);
+    right: 0px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    z-index: -1;
   }
 }
