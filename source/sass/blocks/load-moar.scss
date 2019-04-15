@@ -1,7 +1,3 @@
-.load-moar {
-  @include border-bot($greyish);
-}
-
 .load-moar__wrapper {
   display: flex;
   flex-direction: column;
@@ -29,13 +25,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .load-moar {
-    border-bottom: none;
-  }
 
-  .load-moar__wrapper {
-
-  }
 }
 
 @media (min-width: $desktop-width) {
