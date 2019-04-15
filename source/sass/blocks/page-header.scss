@@ -35,7 +35,7 @@
 
   .index-header::after {
     @include pseudo(720px, 696px, $leaf);
-    right: 0px;
+    right: 0;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;

@@ -1,16 +1,3 @@
 .main-nav__list {
   @include list;
 }
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-
-  }
-
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-
-  }
-}

@@ -14,12 +14,12 @@
 .item-card__value {
   @include texter($greyish, 12px, 16px, 400);
   text-align: right;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
 }
 
 .item-card__parameter {
   @include texter($greyish, 12px, 16px, 400);
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,8 +46,4 @@
   .item-card__value {
     @include texter($greyish, 16px, 16px, 400);
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

@@ -18,7 +18,7 @@
   @include texter($greyish, 14px, 18px, 400);
   position: relative;
   display: flex;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   margin-bottom: 20px;
   z-index: 1;
 }
@@ -28,8 +28,8 @@
 }
 
 .advantage__icon {
-  display: block;
   @include sizer(60px);
+  display: block;
   background-color: $leaf;
   margin-right: 20px;
   flex-shrink: 0;
@@ -45,7 +45,7 @@
     @include texter($lightgrey, 281px, 281px, 400);
     display: block;
     position: absolute;
-    font-family: "Oswald";
+    font-family: "Oswald", "Arial", sans-serif;
     top: -40px;
     left: 90px;
     z-index: -1;
@@ -100,7 +100,7 @@
     }
 
     &:nth-of-type(4n) {
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }

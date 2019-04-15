@@ -25,9 +25,8 @@
     flex-wrap: wrap;
   }
 
-  .catalog__item  {
+  .catalog__item {
     width: calc(50% - 30px);
-    border: none;
     margin-right: auto;
     margin-bottom: 140px;
     padding: 40px 38px;
@@ -45,7 +44,7 @@
     padding: 0 110px;
   }
 
-  .catalog__item  {
+  .catalog__item {
     width: calc(25% - 40px);
 
     &:nth-child(2n) {

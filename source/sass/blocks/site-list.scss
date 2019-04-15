@@ -5,12 +5,12 @@
 }
 
 .site-list__item {
-  padding: 22px 0px;
+  padding: 22px 0;
   border-bottom: 1px solid $black;
 }
 
 @media (min-width: $tablet-width) {
-  .site-list  {
+  .site-list {
     flex-direction: row;
   }
 
@@ -20,12 +20,6 @@
   }
 
   .site-list__item:first-child {
-    border-top: none
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-
+    border-top: none;
   }
 }
