@@ -26,12 +26,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo__wrapper {
+    @include center-pos;
+    width: 768px;
+    padding: 0 30px 0 90px;
+  }
+
   .promo {
     display: flex;
     flex-direction: column;
-    width: 708px;
-    margin-left: 15%;
     background-image: none;
+    margin: 0;
   }
 
   .promo__title {
@@ -56,8 +61,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 1440px;
+    padding: 0 110px 200px 190px;
+  }
+
   .promo {
-    width: 70%;
+
   }
 
   .promo__title {

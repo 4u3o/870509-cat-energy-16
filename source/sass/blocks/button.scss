@@ -11,3 +11,14 @@
     color: $greyish;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    @include texter($white, 20px, 20px, 400)
+    padding: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
