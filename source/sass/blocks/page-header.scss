@@ -29,7 +29,8 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
-    width: 1220px;
+    width: 1440px;
+    padding: 0 100px;
   }
 
   .index-header::after {
