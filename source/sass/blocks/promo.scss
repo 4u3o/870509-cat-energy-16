@@ -1,15 +1,15 @@
 .promo__wrapper {
+  @include center-pos;
+  width: 280px;
+}
+
+.promo {
   min-width: 280px;
   height: auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.promo {
-  @include center-pos;
-  width: 280px;
 }
 
 .promo__title {
@@ -33,19 +33,20 @@
 
 @media (min-width: $tablet-width) {
   .promo__wrapper {
-    @include center-pos;
-    width: 708px;
-    height: auto;
-    background-image: none;
-    padding-left: 90px;
-  }
-
-  .promo {
     width: 80%;
     display: flex;
     flex-direction: column;
     background-image: none;
     margin: 0;
+
+  }
+
+  .promo {
+    @include center-pos;
+    width: 708px;
+    height: auto;
+    background-image: none;
+    padding-left: 90px;
   }
 
   .promo__title {
@@ -71,7 +72,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo__wrapper {
+  .promo {
     width: 1220px;
     padding: 0 0 200px 80px;
   }

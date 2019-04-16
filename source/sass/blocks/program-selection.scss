@@ -1,9 +1,3 @@
-.program-selection {
-  @include center-pos;
-  width: 280px;
-  background-color: white;
-}
-
 .program-selection__list {
   padding: 0;
 }
@@ -47,10 +41,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program-selection {
-    width: 708px;
-  }
-
   .program-selection__item {
     padding: 80px 50px 50px;
     margin-bottom: 30px;
@@ -91,10 +81,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .program-selection {
-    width: 1220px;
-  }
-
   .program-selection__title {
     padding-top: 34px;
     padding-bottom: 30px;

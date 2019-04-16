@@ -1,8 +1,3 @@
-.catalog {
-  @include center-pos;
-  width: 280px;
-}
-
 .catalog__list {
   @include list;
 }
@@ -15,10 +10,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
-    width: 708px;
-  }
-
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -38,10 +29,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    width: 1220px;
-  }
-
   .catalog__item {
     width: calc(25% - 40px);
 

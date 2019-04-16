@@ -1,34 +1,27 @@
 .page-header {
-  @include center-pos;
-  width: 280px;
   display: flex;
   flex-direction: column;
 }
 
-.page-header__wrapper {
+.page-header__section {
   @include padding-vert(10px);
   border-bottom: 1px solid $greyish;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 708px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  .page-header__wrapper {
+  .page-header__section {
     border-bottom: none;
     padding: 10px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    width: 1220px;
-  }
-
   .index-header::after {
     @include pseudo(720px, 696px, $leaf);
     right: 0;

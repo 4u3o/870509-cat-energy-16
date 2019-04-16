@@ -1,8 +1,5 @@
 .advantage {
-  @include center-pos;
-  width: 280px;
-  background-color: white;
-  padding: 0 0 20px;
+  padding-bottom: 20px;
 }
 
 .advantage__title {
@@ -35,10 +32,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantage {
-    width: 708px;
-  }
-
   .advantage__number {
     @include texter($lightgrey, 281px, 281px, 400);
     display: block;
@@ -76,10 +69,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantage {
-    width: 1220px;
-  }
-
   .advantage__item {
     @include texter($greyish, 16px, 24px, 400);
     width: calc(25% - 80px);
