@@ -1,18 +1,52 @@
-.page-main {
-  &__wrapper {
-    @include wrapper;
-    @include border-bot;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+.page-main__wrapper {
+  @include center-pos;
+  @include border-bot;
+  padding: 0 0 35px;
+  width: 280px;
+}
 
-  &__title {
-    @include text(36px);
-    color: $white;
-  }
+.page-main__title {
+  color: $white;
+  padding-top: 30px;
+  line-height: 36px;
+  text-align: center;
+  z-index: 2;
 
-  &__title--catalog {
+  &--catalog {
     @include texter($black, 36px, 60px, 400);
     text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include texter($black, 60px, 60px, 400);
+    width: 450px;
+    text-align: left;
+
+    &--catalog {
+      width: 708px;
+    }
+  }
+
+  .page-main__wrapper {
+    width: 708px;
+    border-bottom: none;
+    margin-bottom: 150px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    margin-top: 100px;
+
+    &--catalog {
+      margin: 70px 0;
+    }
+  }
+
+  .page-main__wrapper {
+    width: 1220px;
   }
 }

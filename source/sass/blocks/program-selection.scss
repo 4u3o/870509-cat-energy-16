@@ -1,46 +1,119 @@
-.program-selection {
-  @include wrapper;
-  background-color: white;
-  padding-bottom: 20px;
+.program-selection__list {
+  padding: 0;
+}
 
-  &__list {
+.program-selection__item {
+  @include center-pos;
+  list-style: none;
+  background-color: $lightgrey;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.program-selection__title {
+  @include texter($black, 24px, 37px, 400);
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding-left: 75px;
+  padding-top: 20px;
+
+  &::before {
+    @include pseudo(50px, 50px, $leaf);
+    border-radius: 25px;
+    top: 15px;
+    left: 0;
+  }
+}
+
+.program-selection__description {
+  @include texter($greyish, 14px, 18px, 400);
+  font-family: "Arial", sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.program-selection__link {
+  @include texter($black, 16px, 16px, 400);
+  @include link;
+  padding: 5px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection__item {
+    padding: 80px 50px 50px;
+    margin-bottom: 30px;
+  }
+
+  .program-selection__description {
+    @include texter($greyish, 16px, 24px, 400);
+    margin-bottom: 40px;
+    border-bottom: none;
+  }
+
+  .program-selection__link {
+    @include texter($black, 20px, 20px, 400);
     padding: 0;
   }
 
-  &__item {
-    list-style: none;
-    background-color: $lightgrey;
-  }
-
-  &__partition {
-    @include wrapper;
-    padding-bottom: 20px;
-  }
-
-  &__title {
+  .program-selection__partition {
     position: relative;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 37px;
-    text-align: left;
-    padding-left: 75px;
-    padding-top: 40px;
+    padding-right: 220px;
+
+    &::after {
+      @include pseudo(200px, 200px, $leaf);
+      border-radius: 100px;
+      top: 10px;
+      right: 0;
+    }
   }
 
-  &__title::before {
-    @include pseudo(50px, 50px, $leaf);
-    border-radius: 25px;
-    top: 40px;
+  .program-selection__title {
+    @include texter($black, 36px, 37px, 400);
+    padding-left: 0;
+    padding-top: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection__title {
+    padding-top: 34px;
+    padding-bottom: 30px;
+    padding-left: 164px;
+
+    &::before {
+      @include pseudo(100px, 100px, $leaf);
+      border-radius: 50px;
+      left: 0;
+    }
   }
 
-  &__description {
-    @include texter($greyish, 14px, 18px, 400);
-    padding-bottom: 24px;
-    border-bottom: 1px solid black;
+  .program-selection__description {
+    margin-top: 45px;
+    margin-bottom: 15px;
   }
 
-  &__link {
-    @include texter($black, 16px, 16px, 400);
-    @include link;
+  .program-selection__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-selection__item {
+    padding-top: 50px;
+    margin: 0;
+    width: calc(50% - 40px);
+  }
+
+  .program-selection__partition {
+    padding-right: 0;
+
+    &::after {
+      content: none;
+    }
   }
 }

@@ -39,10 +39,11 @@
 @mixin list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-@mixin border-bot {
-  border-bottom: 1px solid $black;
+@mixin border-bot($color: $black) {
+  border-bottom: 1px solid $color;
 }
 
 @mixin sizer($width: 10px, $height: $width) {
@@ -55,7 +56,6 @@
   position: absolute;
   display: block;
   top: 0;
-  left: 0;
   width: $width;
   height: $height;
   background-color: $color;

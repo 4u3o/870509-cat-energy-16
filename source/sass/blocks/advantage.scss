@@ -1,26 +1,88 @@
-
 .advantage {
-  @include wrapper;
-  background-color: white;
   padding-bottom: 20px;
+}
 
-  &__title {
-    @include texter($black, 36px, 60px, 400);
+.advantage__title {
+  text-align: left;
+}
+
+.advantage__list {
+  @include list;
+}
+
+.advantage__item {
+  @include texter($greyish, 14px, 18px, 400);
+  position: relative;
+  display: flex;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.advantage__number {
+  display: none;
+}
+
+.advantage__icon {
+  @include sizer(60px);
+  display: block;
+  background-color: $leaf;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage__number {
+    @include texter($lightgrey, 281px, 281px, 400);
+    display: block;
+    position: absolute;
+    font-family: "Oswald", "Arial", sans-serif;
+    top: -40px;
+    left: 90px;
+    z-index: -1;
   }
 
-  &__list {
-    @include list;
-  }
-
-  &__item {
-    @include texter($greyish, 14px, 18px, 400);
+  .advantage__icon {
+    @include sizer(80px);
     position: relative;
-    padding-left: 80px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    margin-bottom: 35px;
   }
 
-  &__item::before {
-    @include pseudo(60px, 60px, $leaf);
+  .advantage__item {
+    @include texter($greyish, 16px, 24px, 400);
+    width: calc(50% - 80px);
+    min-height: 230px;
+    flex-direction: column;
+    margin-right: auto;
+    margin-bottom: 80px;
+
+    &:nth-of-type(2n) {
+      margin-right: 50px;
+    }
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage__item {
+    @include texter($greyish, 16px, 24px, 400);
+    width: calc(25% - 80px);
+    min-height: 230px;
+    flex-direction: column;
+    margin-right: auto;
+    margin-bottom: 80px;
+
+    &:nth-of-type(2n) {
+      margin-right: auto;
+    }
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
   }
 }

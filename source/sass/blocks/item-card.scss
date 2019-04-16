@@ -1,22 +1,49 @@
-.item-card {
-  &__block {
+.item-card__block {
+  display: flex;
+}
+
+.item-card__title-link {
+  @include link;
+}
+
+.item-card__title {
+  @include texter($black, 16px, 20px, 400);
+  width: 100px;
+}
+
+.item-card__value {
+  @include texter($greyish, 12px, 16px, 400);
+  text-align: right;
+  font-family: "Arial", sans-serif;
+}
+
+.item-card__parameter {
+  @include texter($greyish, 12px, 16px, 400);
+  font-family: "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .item-card {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $lightgrey;
+    min-height: 430px;
   }
 
-  &__title-link {
-    @include link;
+  .item-card__block {
+    flex-direction: column;
+    align-items: center;
   }
 
-  &__title {
-    @include texter($black, 16px, 20px, 400);
+  .item-card__title {
+    @include texter($black, 20px, 20px, 400);
+    text-align: center;
+    width: 130px;
   }
 
-  &__value {
-    @include texter($greyish, 12px, 16px, 400);
-    text-align: right;
-  }
-
-  &__parameter {
-    @include texter($greyish, 12px, 16px, 400);
+  .item-card__parameter,
+  .item-card__value {
+    @include texter($greyish, 16px, 16px, 400);
   }
 }
