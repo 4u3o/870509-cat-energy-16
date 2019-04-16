@@ -13,14 +13,9 @@
   z-index: 2;
 
   &--catalog {
-    line-height: 60px;
+    @include texter($black, 36px, 60px, 400);
     text-align: left;
   }
-}
-
-.page-main__title--catalog {
-  @include texter($black, 36px, 60px, 400);
-  text-align: left;
 }
 
 @media (min-width: $tablet-width) {
