@@ -1,15 +1,21 @@
 .page-main__wrapper {
   @include center-pos;
   @include border-bot;
-  padding: 0 20px 35px;
-  width: 320px;
+  padding: 0 0 35px;
+  width: 280px;
 }
 
 .page-main__title {
-  @include text(36px);
   color: $white;
   padding-top: 30px;
+  line-height: 36px;
+  text-align: center;
   z-index: 2;
+
+  &--catalog {
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .page-main__title--catalog {
@@ -29,8 +35,7 @@
   }
 
   .page-main__wrapper {
-    width: 768px;
-    padding: 0 30px;
+    width: 708px;
     border-bottom: none;
     margin-bottom: 150px;
   }
@@ -47,7 +52,6 @@
   }
 
   .page-main__wrapper {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1220px;
   }
 }

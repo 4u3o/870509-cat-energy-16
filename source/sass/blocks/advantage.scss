@@ -1,12 +1,11 @@
 .advantage {
   @include center-pos;
-  width: 320px;
+  width: 280px;
   background-color: white;
-  padding: 0 20px 20px;
+  padding: 0 0 20px;
 }
 
 .advantage__title {
-  @include texter($black, 36px, 60px, 400);
   text-align: left;
 }
 
@@ -37,8 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
-    width: 768px;
-    padding: 0 30px;
+    width: 708px;
   }
 
   .advantage__number {
@@ -49,10 +47,6 @@
     top: -40px;
     left: 90px;
     z-index: -1;
-  }
-
-  .advantage__title {
-    @include texter($black, 60px, 60px, 400);
   }
 
   .advantage__icon {
@@ -83,8 +77,7 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1220px;
   }
 
   .advantage__item {

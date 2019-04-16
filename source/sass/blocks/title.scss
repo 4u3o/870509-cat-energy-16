@@ -1,0 +1,9 @@
+.title {
+  @include texter($black, 36px, 60px, 400);
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+  }
+}
