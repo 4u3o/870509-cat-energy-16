@@ -1,6 +1,21 @@
 .link {
   @include link;
   @include texter($black, 20px, 20px, 500);
+  position: relative;
+
+  &--active::before {
+    @include pseudo(100%, 2px, $leaf);
+    bottom: -5px;
+    left: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -16,5 +31,9 @@
     &--white {
       color: $white;
     }
+  }
+
+  .link--white.link--active::before {
+    background-color: $white;
   }
 }
