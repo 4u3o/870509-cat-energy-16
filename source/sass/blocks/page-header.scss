@@ -68,6 +68,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__wrapper--closed.main-nav {
+    display: block;
+  }
+
   .page-header__border {
     border-bottom: none;
   }
@@ -84,7 +88,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: none;
-    padding: 10px 0;
+    padding: 22px 0;
   }
 
   .page-header__toggle {
@@ -101,6 +105,7 @@
 @media (min-width: $desktop-width) {
   .page-header__section {
     width: 1220px;
+    padding: 53px 0;
   }
 
   .index-header {

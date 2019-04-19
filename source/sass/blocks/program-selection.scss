@@ -71,34 +71,77 @@
     top: 10px;
     right: 1px;
   }
+
+  &:hover::before {
+    @include pseudo(34px, 12px, transparent);
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    top: 10px;
+    right: -9px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .program-selection__item {
-    padding: 80px 50px 50px;
+    padding: 75px 53px 60px;
     margin-bottom: 30px;
   }
 
   .program-selection__description {
     @include texter($greyish, 16px, 24px, 400);
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 37px;
     border-bottom: none;
   }
 
   .program-selection__link {
     @include texter($black, 20px, 20px, 400);
-    padding: 0;
+    padding-right: 50px;
+
+    &::before {
+      top: 15px;
+      right: 1px;
+    }
+
+    &:hover::before {
+      top: 15px;
+      right: -9px;
+    }
   }
 
   .program-selection__partition {
     position: relative;
     padding-right: 220px;
 
-    &::after {
+    &--pro {
+      padding-right: 260px;
+    }
+
+    &::before {
       @include pseudo(200px, 200px, $leaf);
       border-radius: 100px;
-      top: 10px;
-      right: 0;
+      top: 15px;
+      right: 8px;
+    }
+
+    &--slim::after {
+      @include pseudo(141px, 194px, transparent);
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      top: 5px;
+      right: 38px;
+    }
+
+    &--pro::after {
+      @include pseudo(268px, 113px, transparent);
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      top: 59px;
+      right: -25px;
     }
   }
 
@@ -107,7 +150,8 @@
     padding-left: 0;
     padding-top: 0;
 
-    &::before {
+    &::before,
+    &::after {
       content: none;
     }
   }

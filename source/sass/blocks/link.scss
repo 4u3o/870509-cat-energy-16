@@ -3,11 +3,6 @@
   @include texter($black, 20px, 20px, 500);
   position: relative;
 
-  &--active::before {
-    @include pseudo(100%, 2px, $leaf);
-    bottom: -5px;
-    left: 0;
-  }
 
   &:hover {
     opacity: 0.6;
@@ -21,6 +16,13 @@
 @media (min-width: $tablet-width) {
   .link {
     @include texter($black, 18px, 25px, 400);
+
+
+    &--active::before {
+      @include pseudo(100%, 2px, $leaf);
+      bottom: -9px;
+      left: 0;
+    }
   }
 }
 
