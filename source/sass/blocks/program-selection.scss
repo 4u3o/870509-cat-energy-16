@@ -86,6 +86,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .program-selection__list {
+    margin: 0;
+  }
+
   .program-selection__item {
     padding: 75px 53px 60px;
     margin-bottom: 30px;

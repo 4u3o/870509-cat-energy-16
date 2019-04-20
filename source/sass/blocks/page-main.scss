@@ -23,6 +23,7 @@
     @include texter($black, 60px, 60px, 400);
     width: 450px;
     text-align: left;
+    padding-top: 31px;
 
     &--catalog {
       width: 708px;
@@ -39,7 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    margin-top: 100px;
+    margin-top: 20px;
 
     &--catalog {
       margin: 70px 0;
