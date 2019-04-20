@@ -162,32 +162,68 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program-selection__partition {
+    position: relative;
+    padding-right: 0;
+
+    &--pro {
+      padding-right: 0;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
   .program-selection__title {
-    padding-top: 34px;
+    padding-top: 26px;
     padding-bottom: 30px;
-    padding-left: 164px;
+    padding-left: 160px;
 
     &::before {
       @include pseudo(100px, 100px, $leaf);
       border-radius: 50px;
       left: 0;
+      top: -3px;
+    }
+
+    &--slim::after {
+      @include pseudo(71px, 97px, transparent);
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      top: -9px;
+      left: 13px;
+    }
+
+    &--pro::after {
+      @include pseudo(134px, 57px, transparent);
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      top: 19px;
+      left: -19px;
     }
   }
 
   .program-selection__description {
     margin-top: 45px;
     margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 
   .program-selection__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 74px;
   }
 
   .program-selection__item {
     padding-top: 50px;
     margin: 0;
     width: calc(50% - 40px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .program-selection__partition {
