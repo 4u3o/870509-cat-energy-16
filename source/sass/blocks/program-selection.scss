@@ -64,6 +64,21 @@
   padding: 5px 0;
   padding-right: 37px;
 
+  @keyframes fade {
+    0% {
+      opacity: 0.8;
+    }
+    10% {
+      opacity: 0.5;
+    }
+    40% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   &::before {
     @include pseudo(25px, 12px, transparent);
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -78,6 +93,9 @@
     background-repeat: no-repeat;
     top: 10px;
     right: -9px;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
   }
 
   &:active {
@@ -93,6 +111,10 @@
   .program-selection__item {
     padding: 75px 53px 60px;
     margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 46px;
+    }
   }
 
   .program-selection__description {

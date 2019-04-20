@@ -1,3 +1,9 @@
 .example {
   background-color: $lightgrey;
 }
+
+@media (min-width: $desktop-width) {
+  .example__title  {
+    background-color: $white;
+  }
+}

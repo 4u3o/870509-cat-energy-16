@@ -14,7 +14,9 @@
 .page-header__logo img{
   width: 191px;
   height: 39px;
+}
 
+.page-header__logo {
   &:hover {
     opacity: 0.8;
   }
