@@ -11,16 +11,16 @@
     <header class="page-header">
       <div class="page-header__section">
         <div class="page-header__border">
-          <div class="page-header__wrapper page-header__wrapper--opened">
+          <div class="page-header__wrapper page-header__wrapper--closed">
             <a class="page-header__logo" href="index.html">
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
             </a>
-            <button class="main-nav__toggle visually-hidden"  type="button">
+            <button class="page-header__toggle"  type="button">
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
         </div>
-        <nav class="main-nav">
+        <nav class="page-header__wrapper--closed main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="link" href="index.html">Главная</a>
@@ -39,285 +39,299 @@
       <div class="page-main__wrapper">
         <h1 class="page-main__title page-main__title--catalog title">Каталог продукции</h1>
       </div>
-      <section class="catalog wrapper">
+      <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г курица">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy PRO 500 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г курица">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      500 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Курица
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      700 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy PRO 500 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        500 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Курица
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        700 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г курица">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy PRO 1000 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г курица">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      1000 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Курицы
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      1000 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy PRO 1000 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        1000 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Курицы
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        1000 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г рыба">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy PRO 500 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 г рыба">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      500 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Рыба
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      700 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy PRO 500 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        500 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Рыба
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        700 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г рыба">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy PRO 1000 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 г рыба">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      1000 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Рыба
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      1000 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy PRO 1000 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        1000 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Рыба
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        1000 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г гречка">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy Slim 500 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г гречка">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      500 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Гречка
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      400 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy Slim 500 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        500 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Гречка
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        400 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 г гречка">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy Slim 1000 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 г гречка">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      1000 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Гречка
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      700 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy Slim 1000 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        1000 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Гречка
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        700 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item item-card">
-            <div class="item-card__block">
-              <a class="item-card__image-link" href="product.html">
-                <img class="item-card__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г рис">
-              </a>
-              <section class="item-card__info">
-                <a class="item-card__title-link" href="product.html">
-                  <h3 class="item-card__title">Cat Energy Slim 500 г</h3>
+            <div class="catalog__wrapper">
+              <div class="item-card__block">
+                <a class="item-card__image-link" href="product.html">
+                  <img class="item-card__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 г рис">
                 </a>
-                <table class="item-card__list">
-                  <tr>
-                    <th class="item-card__parameter">
-                      Объем
-                    </th>
-                    <td class="item-card__value">
-                      500 г
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Вкус
-                    </th>
-                    <td class="item-card__value">
-                      Рис
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="item-card__parameter">
-                      Цена
-                    </th>
-                    <td class="item-card__value">
-                      400 Р.
-                    </td>
-                  </tr>
-                </table>
-              </section>
+                <section class="item-card__info">
+                  <a class="item-card__title-link" href="product.html">
+                    <h3 class="item-card__title">Cat Energy Slim 500 г</h3>
+                  </a>
+                  <table class="item-card__list">
+                    <tr>
+                      <th class="item-card__parameter">
+                        Объем
+                      </th>
+                      <td class="item-card__value">
+                        500 г
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Вкус
+                      </th>
+                      <td class="item-card__value">
+                        Рис
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="item-card__parameter">
+                        Цена
+                      </th>
+                      <td class="item-card__value">
+                        400 Р.
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+              </div>
+              <a class="item-card__button button" href="#">Заказать</a>
             </div>
-            <a class="item-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item">
             <div class="load-moar">
-              <div class="load-moar__wrapper">
+              <div class="load-moar__wrapper catalog__wrapper">
                 <a class="load-moar__toggle" href="new-page.html">
                   <span class="visually-hidden">Показать остальные товары</span>
                 </a>

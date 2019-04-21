@@ -1,8 +1,6 @@
 .page-main__wrapper {
-  @include center-pos;
-  @include border-bot;
-  padding: 0 0 35px;
-  width: 280px;
+  padding: 0 0 28px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .page-main__title {
@@ -14,7 +12,10 @@
 
   &--catalog {
     @include texter($black, 36px, 60px, 400);
+    @include center-pos;
     text-align: left;
+    padding-top: 15px;
+    width: 280px;
   }
 }
 
@@ -31,9 +32,10 @@
   }
 
   .page-main__wrapper {
+    @include center-pos;
     width: 708px;
     border-bottom: none;
-    margin-bottom: 150px;
+    margin-bottom: 137px;
   }
 }
 
