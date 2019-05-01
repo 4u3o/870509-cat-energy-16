@@ -42,14 +42,15 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    margin-top: 20px;
 
     &--catalog {
-      margin: 70px 0;
+      margin: 0 auto 0 0;
+      padding: 16px 0 0 0;
     }
   }
 
   .page-main__wrapper {
     width: 1220px;
+    margin-bottom: 139px;
   }
 }
