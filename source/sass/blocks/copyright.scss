@@ -3,6 +3,16 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
+
+  &:hover {
+    path {
+      fill: $leaf;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -16,18 +26,6 @@
 
   path {
     fill: #666666;
-  }
-}
-
-.copyright__link {
-  &:hover {
-    path {
-      fill: $leaf;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 

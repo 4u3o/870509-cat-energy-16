@@ -38,21 +38,21 @@
   background-repeat: no-repeat;
   background-position: center;
 
-    &--use {
-      background-image: url("../img/advantage-leaf@1x.png");
-    }
+  &--use {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
 
-    &--boiling-water {
-      background-image: url("../img/advantage-powder@1x.png");
-    }
+  &--boiling-water {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
 
-    &--meal {
-      background-image: url("../img/advantage-dining@1x.png");
-    }
+  &--meal {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
 
-    &--time {
-      background-image: url("../img/advantage-clock@1x.png");
-    }
+  &--time {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {

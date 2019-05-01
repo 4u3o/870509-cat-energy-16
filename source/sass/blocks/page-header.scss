@@ -11,7 +11,7 @@
   padding-bottom: 12px;
 }
 
-.page-header__logo img{
+.page-header__logo img {
   width: 191px;
   height: 39px;
 }
@@ -49,9 +49,6 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
-  &:hover,
-  &:active {
-  }
 }
 
 .page-header__wrapper--opened .page-header__toggle {
@@ -60,9 +57,6 @@
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
-  &:hover,
-  &:active {
-  }
 }
 
 .page-header__wrapper--closed.main-nav {
@@ -111,7 +105,6 @@
   }
 
   .index-header {
-
     &::after {
       content: "";
       position: absolute;

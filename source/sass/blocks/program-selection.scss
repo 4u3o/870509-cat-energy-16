@@ -68,12 +68,15 @@
     0% {
       opacity: 0.8;
     }
+
     10% {
       opacity: 0.5;
     }
+
     40% {
       opacity: 0.8;
     }
+
     100% {
       opacity: 1;
     }
@@ -188,12 +191,16 @@
     position: relative;
     padding-right: 0;
 
-    &--pro {
-      padding-right: 0;
+    &::after {
+      content: none;
     }
 
     &::before {
       content: none;
+    }
+
+    &--pro {
+      padding-right: 0;
     }
   }
 
@@ -245,14 +252,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  .program-selection__partition {
-    padding-right: 0;
-
-    &::after {
-      content: none;
     }
   }
 }
