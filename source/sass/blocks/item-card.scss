@@ -72,10 +72,20 @@
 
   .item-card__button {
     font-size: 16px;
+    padding: 12px 0 10px;
   }
 
   .item-card__list tr {
     border-bottom: 1px solid #cecece;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    margin-bottom: 9px;
+  }
+
+  .item-card__list tbody {
+    display: flex;
+    flex-direction: column;
   }
 
   .item-card__parameter,
