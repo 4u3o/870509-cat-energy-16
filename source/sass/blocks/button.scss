@@ -2,8 +2,10 @@
   @include link;
   display: block;
   color: $white;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
-  padding: 12px;
+  padding: 11px;
   background-color: $leaf;
 
   &:hover {

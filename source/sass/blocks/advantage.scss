@@ -8,7 +8,7 @@
 
 .advantage__list {
   @include list;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .advantage__item {
@@ -18,6 +18,10 @@
   font-family: "Arial", sans-serif;
   margin-bottom: 20px;
   z-index: 1;
+
+  p {
+    padding-top: 2px;
+  }
 }
 
 .advantage__item p {

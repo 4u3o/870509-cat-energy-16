@@ -29,13 +29,13 @@
 
 .page-footer__list {
   @include border-bot(#dadada);
-  padding-top: 20px;
+  padding-top: 23px;
   padding-bottom: 19px;
 }
 
 .page-footer__copyright {
   font-family: "Arial", sans-serif;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 @media (min-width: $tablet-width) {

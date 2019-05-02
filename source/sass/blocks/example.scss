@@ -2,6 +2,42 @@
   background-color: $lightgrey;
 }
 
+.example__text {
+  @include texter($greyish, 14px, 18px, 400);
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.example__fatloss-speed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__card {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: calc(50% - 16px);
+}
+
+.example__up {
+  @include texter($black, 24px, 24px, 400);
+  text-transform: uppercase;
+  display: block;
+  padding: 17px;
+  text-align: center;
+}
+
+.example__down {
+  @include texter($greyish, 12px, 12px, 400);
+  font-family: "Arial", sans-serif;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 87px;
+}
+
 @media (min-width: $desktop-width) {
   .example__title {
     background-color: $white;

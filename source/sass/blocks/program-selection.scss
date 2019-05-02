@@ -1,6 +1,6 @@
 .program-selection__list {
   padding: 0;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .program-selection__item {
@@ -22,13 +22,13 @@
   text-align: left;
   margin: 0;
   padding-left: 71px;
-  padding-top: 20px;
+  padding-top: 19px;
 
   &::before {
     @include pseudo(50px, 50px, $leaf);
     border-radius: 25px;
-    top: 15px;
-    left: 1px;
+    top: 14px;
+    left: 2px;
   }
 
   &--slim::after {

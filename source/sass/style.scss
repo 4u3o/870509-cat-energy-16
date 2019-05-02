@@ -1,3 +1,4 @@
+@import "abstracts/normalize";
 @import "fonts";
 @import "abstracts/variables";
 @import "abstracts/mixins";
@@ -21,3 +22,5 @@
 @import "blocks/catalog";
 @import "blocks/item-card";
 @import "blocks/load-moar";
+@import "blocks/map";
+@import "blocks/collaboration";
