@@ -89,7 +89,7 @@
 
   .advantage__icon {
     @include sizer(80px);
-    margin-bottom: 34px;
+    margin-bottom: 32px;
 
     &--use {
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -160,7 +160,7 @@
   }
 
   .advantage__icon {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .advantage {
