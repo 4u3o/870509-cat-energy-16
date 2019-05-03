@@ -8,6 +8,14 @@
 }
 
 .social__link {
+  path {
+    fill: #666666;
+  }
+
+  circle {
+    fill: #666666;
+  }
+
   &:hover {
     path {
       fill: $leaf;
