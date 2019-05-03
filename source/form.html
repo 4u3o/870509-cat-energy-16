@@ -26,16 +26,105 @@
               <a class="link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="link link--active" href="catalog.html">Каталог продукции</a>
+              <a class="link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="link" href="#">Подбор программы</a>
+              <a class="link link--active" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="page-main">
+      <section class"program-selection">
+        <div class="page-main__wrapper wrapper">
+          <h1 class="page-main__title page-main__title--catalog title">Подбор программы</h1>
+          <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+          <form class="" action="https://echo.htmlacademy.ru" method="get">
+
+            <fieldset class="program-selection__group">
+              <ul class="list">
+                <li class="list-item">
+                  <label class="program-selection__label-text" for="">Имя:*</label>
+                  <input type="text" id="" required>
+                </li>
+                <li class="list-item">
+                  <label class="program-selection__label-text" for="">Вес (кг):*</label>
+                  <input type="text" id="" required>
+                </li>
+                <li class="list-item">
+                  <label class="program-selection__label-text" for="">Возраст (лет):</label>
+                  <input type="text" id="">
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="program-selection__group">
+              <ul class="list">
+                <li class="list-item">
+                  <input type="radio" id="" value="">
+                  <label class="program-selection__label-text" for="">Похудение</label>
+                </li>
+                <li class="list-item">
+                  <input type="radio" id="" value="">
+                  <label class="program-selection__label-text" for="">Набор массы</label>
+                </li>
+                <li class="list-item">
+                  <input type="radio" id="" value="">
+                  <label class="program-selection__label-text" for="">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+
+
+
+          <fieldset class="program-selection__group">
+            <legend class="program-selection__legend-text">Контактные данные (владельца кота)</legend>
+            <ul class="list">
+              <li class="list-item">
+                <label class="program-selection__label-text" for="">E-mail:*</label>
+                <input type="email" id="" required>
+              </li>
+              <li class="list-item">
+                <label class="program-selection__label-text" for="">Телефон:*</label>
+                <input type="tel" id="" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="program-selection__group">
+            <legend class="program-selection__legend-text">Комментарий</legend>
+            <label class="visually-hidden" for="">Повадки кота</label>
+            <textarea class="" id=""></textarea>
+          </fieldset>
+
+          <fieldset class="program-selection__group">
+            <legend class="program-selection__legend-text">Дополнительно</legend>
+            <ul class="list">
+              <li class="list-item">
+                <input type="checkbox" id="" checked>
+                <label class="program-selection__label-text" for="">Сахарозаменитель</label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="">
+                <label class="program-selection__label-text" for="">Питьевая вода</label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="">
+                <label class="program-selection__label-text" for="">Молоко</label>
+              </li>
+              <li class="list-item">
+                <input type="checkbox" id="">
+                <label class="program-selection__label-text" for="">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">Отправить заявку</button>
+        </form>
+        <p>* — Обязательные поля</p>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
