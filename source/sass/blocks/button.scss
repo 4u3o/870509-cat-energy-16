@@ -2,19 +2,45 @@
   @include link;
   display: block;
   color: $white;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
-  padding: 12px;
+  padding: 11px;
   background-color: $leaf;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--grey {
     background-color: $lightgrey;
     color: $greyish;
+    font-size: 16px;
+    padding: 12px 10px 10px;
+  }
+
+  &--grey:hover {
+    background-color: #ebebeb;
+  }
+
+  &--grey:active {
+    color: rgba(68, 68, 68, 0.3);
   }
 }
 
 @media (min-width: $tablet-width) {
   .button {
-    @include texter($white, 20px, 20px, 400);
+    font-size: 20px;
     padding: 16px;
+
+    &--grey {
+      font-size: 16px;
+      padding: 13px 0 9px;
+      margin-top: auto;
+    }
   }
 }

@@ -1,12 +1,36 @@
-.copyright {
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  &:hover {
+    path {
+      fill: $leaf;
+    }
   }
 
-  &__text {
-    @include texter($greyish, 16px, 16px, 400);
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  @include texter($greyish, 16px, 16px, 400);
+}
+
+
+.copyright__academy {
+  width: 27px;
+  height: 34px;
+
+  path {
+    fill: #666666;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 22px;
   }
 }

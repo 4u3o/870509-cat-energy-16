@@ -1,3 +1,76 @@
 .example {
   background-color: $lightgrey;
 }
+
+.example__title {
+  padding-top: 19px;
+}
+
+.example__text {
+  @include texter($greyish, 14px, 18px, 400);
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding-right: 10px;
+  padding-top: 23px;
+}
+
+.example__fatloss-speed {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 34px;
+}
+
+.example__card {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: calc(50% - 16px);
+}
+
+.example__up {
+  @include texter($black, 24px, 24px, 400);
+  text-transform: uppercase;
+  display: block;
+  padding: 13px 0 17px;
+  text-align: center;
+}
+
+.example__down {
+  @include texter($greyish, 12px, 12px, 400);
+  font-family: "Arial", sans-serif;
+  position: absolute;
+  top: 46px;
+  left: 16px;
+  display: block;
+  padding: 0 17px;
+  text-align: center;
+  background-color: $lightgrey;
+  width: 87px;
+  z-index: 2;
+}
+
+.example__cost {
+  @include texter($black, 14px, 20px, 400);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__image {
+  margin-top: 21px;
+  margin-bottom: 60px;
+}
+
+.example__slider {
+  @include texter($black, 16px, 20px, 400);
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+
+@media (min-width: $desktop-width) {
+  .example__title {
+    background-color: $white;
+  }
+}

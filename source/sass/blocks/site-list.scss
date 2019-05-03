@@ -6,7 +6,7 @@
 
 .site-list__item {
   padding: 22px 0;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $bordonwhite;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,7 +16,8 @@
 
   .site-list__item {
     border-bottom: none;
-    padding: 20px 15px;
+    padding: 20px 0;
+    margin-left: 35px;
   }
 
   .site-list__item:first-child {

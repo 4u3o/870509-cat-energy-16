@@ -1,0 +1,31 @@
+.collaboration--form {
+  background-color: $lightgrey;
+}
+
+.collaboration__conteiner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 25px;
+}
+
+.collaboration__invite {
+  @include texter($black, 16px, 20px, 400);
+  width: 125px;
+  text-transform: uppercase;
+  text-align: left;
+
+  p {
+    margin: 0;
+  }
+}
+
+.collaboration__address {
+  @include texter($greyish, 14px, 20px, 400);
+  font-family: "Arial", sans-serif;
+  margin-right: 5px;
+
+  p {
+    margin: 0;
+  }
+}
