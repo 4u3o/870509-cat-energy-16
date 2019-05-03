@@ -8,6 +8,7 @@
 
 .advantage__list {
   @include list;
+  margin-top: 29px;
 }
 
 .advantage__item {
@@ -17,6 +18,11 @@
   font-family: "Arial", sans-serif;
   margin-bottom: 20px;
   z-index: 1;
+
+  p {
+    margin: 0;
+    padding-top: 2px;
+  }
 }
 
 .advantage__number {
@@ -25,10 +31,29 @@
 
 .advantage__icon {
   @include sizer(60px);
+  position: relative;
   display: block;
   background-color: $leaf;
   margin-right: 20px;
   flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--use {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--boiling-water {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--meal {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--time {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,14 +63,13 @@
     position: absolute;
     font-family: "Oswald", "Arial", sans-serif;
     top: -40px;
-    left: 90px;
+    left: 115px;
     z-index: -1;
   }
 
   .advantage__icon {
     @include sizer(80px);
-    position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   .advantage__item {
@@ -54,24 +78,29 @@
     min-height: 230px;
     flex-direction: column;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 87px;
 
     &:nth-of-type(2n) {
       margin-right: 50px;
     }
   }
 
+  .advantage__item p {
+    width: 90%;
+  }
+
   .advantage__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 71px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage__item {
     @include texter($greyish, 16px, 24px, 400);
-    width: calc(25% - 80px);
+    width: calc(25% - 60px);
     min-height: 230px;
     flex-direction: column;
     margin-right: auto;
@@ -84,5 +113,17 @@
     &:nth-of-type(4n) {
       margin-right: 0;
     }
+  }
+
+  .advantage__icon {
+    margin-bottom: 33px;
+  }
+
+  .advantage {
+    padding-bottom: 0;
+  }
+
+  .advantage__item p {
+    width: 100%;
   }
 }
