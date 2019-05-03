@@ -34,7 +34,7 @@
     width: calc(50% - 30px);
     margin-right: auto;
     margin-bottom: 141px;
-    padding: 39px 37px;
+    padding: 39px 36px 38px 37px;
     border: 1px solid $lightgrey;
 
     &:nth-child(2n) {
@@ -50,7 +50,8 @@
 
   .catalog__item {
     width: calc(25% - 60px);
-    margin-bottom: 143px;
+    margin-bottom: 144px;
+    padding-right: 38px;
 
     &:nth-child(2n) {
       margin-right: auto;
