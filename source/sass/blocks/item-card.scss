@@ -45,6 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .item-card {
+    position: relative;
     background-color: $lightgrey;
     min-height: 430px;
   }
@@ -53,8 +54,14 @@
     width: 100%;
   }
 
+  .item-card__image {
+    position: absolute;
+    left: 0;
+    bottom: 304px;
+  }
+
   .item-card__image-link {
-    margin-top: -44px;
+    padding-top: 100px;
   }
 
   .item-card__block {
@@ -73,7 +80,7 @@
 
   .item-card__button {
     font-size: 16px;
-    padding: 12px 0 10px;
+    padding: 11px 0 9px;
   }
 
   .item-card__list tr {

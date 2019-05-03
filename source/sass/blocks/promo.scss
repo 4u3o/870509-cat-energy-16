@@ -10,6 +10,10 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -54,6 +58,7 @@
     line-height: 20px;
     margin-top: 42px;
     margin-bottom: 47px;
+    margin-left: 1px;
     color: $black;
     text-align: left;
     z-index: 2;
@@ -64,14 +69,18 @@
     margin-top: -80px;
     z-index: 1;
     margin-left: -87px;
-    width: 708px;
+    width: 709px;
     min-height: 609px;
+  }
+
+  .promo__product-image {
+    display: block;
   }
 
   .promo__button {
     width: 245px;
     order: 0;
-    margin-left: 0;
+    margin-left: 1px;
     z-index: 2;
   }
 }
@@ -85,6 +94,7 @@
 
   .promo__title {
     margin-top: 41px;
+    margin-left: 0;
   }
 
   .promo__button {
@@ -95,7 +105,7 @@
     width: 552px;
     min-height: 499px;
     position: absolute;
-    margin: 0;
+    margin: -50px 0 0 -14px;
     left: 38%;
   }
 }
