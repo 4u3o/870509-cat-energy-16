@@ -12,8 +12,8 @@
   background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  background-image: url("../img/index-background-mobile@2x.jpg");
-}
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
