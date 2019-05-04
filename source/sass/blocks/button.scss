@@ -35,11 +35,12 @@
 @media (min-width: $tablet-width) {
   .button {
     font-size: 20px;
+    line-height: 20px;
     padding: 16px;
 
     &--grey {
       font-size: 16px;
-      padding: 13px 0 9px;
+      padding: 11px 0 9px;
       margin-top: auto;
     }
   }

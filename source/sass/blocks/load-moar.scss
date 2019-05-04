@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   margin-bottom: 23px;
   margin-top: 25px;
+  opacity: 0.2;
 }
 
 .load-moar__attention {
@@ -31,7 +32,7 @@
   .load-moar__toggle {
     @include sizer(61px);
     margin-top: 15px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
 
   .load-moar__attention {

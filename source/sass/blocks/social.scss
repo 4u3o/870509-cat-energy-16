@@ -4,9 +4,18 @@
   display: flex;
   justify-content: space-between;
   width: 125px;
+  align-items: center;
 }
 
 .social__link {
+  path {
+    fill: #666666;
+  }
+
+  circle {
+    fill: #666666;
+  }
+
   &:hover {
     path {
       fill: $leaf;
@@ -19,5 +28,36 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-right: 0;
+  }
+
+  .social__icon--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__icon--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 70px;
+  }
+
+  .copyright__link {
+    margin-bottom: -3px;
   }
 }
