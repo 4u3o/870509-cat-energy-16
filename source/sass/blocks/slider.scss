@@ -1,0 +1,24 @@
+.slider {
+  align-items: center;
+}
+
+.slider__outline {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background-color: $white;
+}
+
+.slider__inline {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $leaf;
+}

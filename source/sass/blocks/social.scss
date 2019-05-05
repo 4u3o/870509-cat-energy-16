@@ -1,29 +1,17 @@
 .social {
   @include list;
-  @include center-pos;
+  margin-left: 73px;
   display: flex;
   justify-content: space-between;
   width: 125px;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.social__link {
-  path {
-    fill: #666666;
-  }
-
-  circle {
-    fill: #666666;
-  }
+.social__icon {
+  fill: #666666;
 
   &:hover {
-    path {
-      fill: $leaf;
-    }
-
-    circle {
-      fill: $leaf;
-    }
+    fill: $leaf;
   }
 
   &:active {
@@ -34,6 +22,7 @@
 @media (min-width: $tablet-width) {
   .social {
     margin-right: 0;
+    align-items: center;
   }
 
   .social__icon--vk {
