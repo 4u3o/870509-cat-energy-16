@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -316,7 +321,7 @@
               <a class="item-card__button button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="catalog__item item-card">
+          <li class="catalog__item item-card catalog__item--last-string">
             <div class="catalog__wrapper">
               <div class="item-card__block">
                 <a class="item-card__image-link" href="product.html">
@@ -361,7 +366,7 @@
               <a class="item-card__button button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="catalog__item">
+          <li class="catalog__item catalog__item--last-string">
             <div class="load-moar">
               <div class="load-moar__wrapper catalog__wrapper">
                 <a class="load-moar__toggle" href="new-page.html">
@@ -375,14 +380,60 @@
           </li>
         </ul>
       </section>
-      <div class="collaboration collaboration--form">
-        <div class="collaboration__conteiner collaboration__conteiner wrapper">
-          <div class="collaboration__invite">
-            <p>приглашаем к&nbsp;сотрудничеству дилеров!</p>
+      <section class="extra-goods">
+        <div class="title__bg">
+          <span class="title__line"></span>
+          <div class="title__wrapper wrapper">
+            <h2 class="extra-goods__title title__sideline">Дополнительные товары</h2>
           </div>
-          <div class="collaboration__address">
-            <p>ул. Большая<br> Конюшенная, д. 19/8 </p>
-            <p>Санкт-Петербург</p>
+        </div>
+        <div class="extra-goods__wrapper wrapper">
+          <ul class="extra-goods__list list">
+            <li class="extra-goods__item goods-card">
+              <div class="goods-card__header">
+                <h3 class="goods-card__title">Сахарозаменитель</h3>
+                <div class="goods-card__content"><span>1 упаковка (100 г)</span><span>200 Р.</span></div>
+              </div>
+              <a href="#" class="goods-card__button button">Заказать</a>
+            </li>
+            <li class="extra-goods__item goods-card">
+              <div class="goods-card__header">
+                <h3 class="goods-card__title">Питьевая вода</h3>
+                <div class="goods-card__content"><span>5 литров</span><span>50 Р.</span></div>
+              </div>
+              <a href="#" class="goods-card__button button">Заказать</a>
+            </li>
+            <li class="extra-goods__item goods-card">
+              <div class="goods-card__header">
+                <h3 class="goods-card__title">Молоко</h3>
+                <div class="goods-card__content"><span>1 литр</span><span>100 Р.</span></div>
+              </div>
+              <a href="#" class="goods-card__button button">Заказать</a>
+            </li>
+            <li class="extra-goods__item goods-card">
+              <div class="goods-card__header">
+                <h3 class="goods-card__title">Витамины</h3>
+                <div class="goods-card__content"><span>1 упаковка (30 г)</span><span>300 Р.</span></div>
+              </div>
+              <a href="#" class="goods-card__button button">Заказать</a>
+            </li>
+          </ul>
+          <div class="extra-goods__banner">
+            <span class="extra-goods__icon"></span>
+            <p class="extra-goods__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+      </section>
+      <div class="collaboration collaboration--form">
+        <div class="wrapper">
+          <div class="collaboration__conteiner collaboration__conteiner">
+            <div class="collaboration__invite">
+              <p>приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            </div>
+            <div class="collaboration__address">
+              <p>ул. Большая<br> Конюшенная, д. 19/8 </p>
+              <p>Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="360" frameborder="1" allowfullscreen="true"></iframe>

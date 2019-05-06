@@ -19,6 +19,7 @@
     width: 708px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 90px;
   }
 
   .catalog__wrapper {
@@ -39,6 +40,10 @@
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &--last-string {
+      margin-bottom: 0;
     }
   }
 }
