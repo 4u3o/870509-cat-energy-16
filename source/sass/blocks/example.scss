@@ -57,8 +57,9 @@
 }
 
 .example__image {
-  margin-top: 21px;
-  margin-bottom: 60px;
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 47px;
 }
 
 .example__slider {
@@ -70,12 +71,12 @@
   margin: 0 29px 0 35px;
 }
 
-.example__image {
-  display: flex;
-}
-
 .example__after-image {
   display: none;
+}
+
+.example__pic--fat {
+  transform: scale(1.14);
 }
 
 @media (min-width: $tablet-width) {
@@ -83,7 +84,7 @@
     background-color: $white;
   }
 
-  .example__wrapper {
+  .example__title-wrapper {
     margin-top: 42px;
   }
 
@@ -157,6 +158,7 @@
   }
 
   .example__image {
+    margin-top: 21px;
     margin-bottom: 16px;
   }
 
@@ -178,6 +180,7 @@
 
   .example__pic--fat {
     max-width: none;
+    transform: scale(1);
     transform: translate(2.5%);
   }
 
@@ -203,7 +206,82 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example__desktop-bg {
+    background: linear-gradient(to right, $lightgrey 70%, #eaeaea 70%);
+  }
+
+  .example__wrapper {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .example__group {
+    width: 435px;
+    margin: 0;
+  }
+
+  .example__bg {
+    margin-left: auto;
+    width: 570px;
+  }
+
+  .example__transform {
+    margin-left: -69px;
+    margin-top: -210px;
+  }
+
+  .example__down {
+    background-color: $lightgrey;
+  }
+
+  .example__text {
+    margin-top: 71px;
+    margin-bottom: 68px;
+    padding-right: 0;
+  }
+
+  .example__sicret {
+    width: 708px;
+  }
+
+  .example__pic--fat {
+    max-width: none;
+    transform: translate(-1.5%);
+  }
+
+  .example__pic--skiny {
+    max-width: none;
+    transform: translate(-53%);
+  }
+
   .example__title {
     background-color: $white;
+    margin-bottom: 74px;
+  }
+
+  .example__terms {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .example__cost {
+    width: 365px;
+    display: flex;
+    justify-content: space-between;
+
+    span:last-child {
+      margin-right: 38px;
+    }
+  }
+
+  .example__fatloss-speed {
+    margin-bottom: 56px;
+  }
+
+  .example__image {
+    margin-bottom: 35px;
   }
 }
