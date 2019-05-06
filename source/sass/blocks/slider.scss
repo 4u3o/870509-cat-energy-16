@@ -56,25 +56,25 @@
   }
 
   .slider__inline {
-    top: -14px;
-    left: calc(50% - 15px);
-    width: 34px;
-    height: 34px;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-    border: 13px solid #ffffff;
+    top: -13px;
+    left: calc(50% - 13px);
+    width: 31px;
+    height: 31px;
+    box-shadow: 0px 0px 0 1px #cdcdcd, 0px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    border: 12px solid #ffffff;
     border-radius: 17px;
 
     &:hover {
-      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 0 1px #cdcdcd, 0px 3px 5px 1px rgba(0, 0, 0, 0.25);
     }
 
     &:active {
       top: -13px;
-      left: calc(50% - 14px);
-      width: 32px;
-      height: 32px;
+      left: calc(50% - 13px);
+      width: 31px;
+      height: 31px;
       border: 12px solid #ffffff;
-      box-shadow: 0px 0px 0 2px $leaf, 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 0 2px $leaf, 0px 4px 5px 1px rgba(0, 0, 0, 0.3);
     }
   }
 }
