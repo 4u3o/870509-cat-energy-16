@@ -8,3 +8,9 @@
     min-height: 393px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 398px;
+  }
+}
