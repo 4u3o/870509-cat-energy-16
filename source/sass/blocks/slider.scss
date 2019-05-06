@@ -31,6 +31,15 @@
     padding-bottom: 6px;
     padding-top: 2px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .slider {
@@ -54,5 +63,18 @@
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
     border: 13px solid #ffffff;
     border-radius: 17px;
+
+    &:hover {
+      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      top: -13px;
+      left: calc(50% - 14px);
+      width: 32px;
+      height: 32px;
+      border: 12px solid #ffffff;
+      box-shadow: 0px 0px 0 2px $leaf, 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 }
