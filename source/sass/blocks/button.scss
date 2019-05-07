@@ -16,6 +16,15 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &--form {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    padding: 11px 10px 9px;
+    margin-bottom: 21px;
+  }
+
   &--grey {
     background-color: $lightgrey;
     color: $greyish;

@@ -1,6 +1,11 @@
 .page-main__wrapper {
   padding: 0 0 28px;
   border-bottom: 1px solid #eeeeee;
+
+  &--bordless {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
 .page-main__title {
@@ -16,6 +21,7 @@
     text-align: left;
     padding-top: 15px;
     width: 280px;
+    margin-bottom: 26px;
   }
 }
 
@@ -50,6 +56,7 @@
 
   .page-main__wrapper {
     width: 1220px;
-    margin-bottom: 137px;
+    padding-bottom: 22px;
+    margin-bottom: 0;
   }
 }
