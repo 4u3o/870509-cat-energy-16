@@ -42,6 +42,10 @@
     width: 708px;
     border-bottom: none;
     margin-bottom: 138px;
+
+    &--bordless {
+      margin-bottom: 56px;
+    }
   }
 }
 
@@ -58,5 +62,10 @@
     width: 1220px;
     padding-bottom: 22px;
     margin-bottom: 0;
+
+    &--bordless {
+      padding-bottom: 0;
+      margin-bottom: 55px;
+    }
   }
 }

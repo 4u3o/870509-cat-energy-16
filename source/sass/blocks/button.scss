@@ -47,10 +47,21 @@
     line-height: 20px;
     padding: 16px;
 
+    &--form {
+      width: calc(50% - 29px);
+      margin-bottom: 0;
+    }
+
     &--grey {
       font-size: 16px;
       padding: 11px 0 9px;
       margin-top: auto;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--form {
+    width: calc(50% - 41px);
   }
 }

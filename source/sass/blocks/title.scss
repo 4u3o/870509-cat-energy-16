@@ -63,8 +63,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .title--form {
+    margin-top: -1px;
+    padding-top: 0;
+  }
+
   .title__line {
     margin-top: 98px;
+
+    &--form {
+      margin-top: 0;
+    }
   }
 
   .title__sideline {
