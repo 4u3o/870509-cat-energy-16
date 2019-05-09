@@ -99,7 +99,6 @@
 }
 
 .input__radio-lbl {
-
   &::before {
     content: "";
     position: absolute;
@@ -123,50 +122,6 @@
 
   &:active::before {
     border-color: rgba(186, 186, 186, 0.3);
-  }
-}
-
-.error {
-  border: solid 2px #ff8282;
-  padding: 11px 12px 12px;
-
-  &:hover {
-    padding: 12px 13px 13px;
-  }
-
-  &--mail:hover {
-    padding-right: 15px;
-    background-image: url("../img/icon-mail.svg");
-  }
-
-  &--phone:hover {
-    padding-right: 11px;
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  &--mail {
-    padding-right: 14px;
-    background-image: url("../img/icon-mail-error.svg");
-  }
-
-  &--phone {
-    padding-right: 10px;
-    background-image: url("../img/icon-phone-error.svg");
-  }
-
-  &:focus {
-    outline: none;
-    padding: 11px 12px 12px;
-  }
-
-  &--mail:focus {
-    padding-right: 14px;
-    background-image: url("../img/icon-mail-active.svg");
-  }
-
-  &--phone:focus {
-    padding-right: 10px;
-    background-image: url("../img/icon-phone-active.svg");
   }
 }
 
@@ -197,7 +152,6 @@
 }
 
 .input__checkbox-lbl {
-
   &::before {
     content: "";
     position: absolute;
@@ -305,7 +259,6 @@
   }
 
   .input__radio-lbl {
-
     &::before {
       width: 40px;
       height: 40px;
@@ -351,7 +304,6 @@
   }
 
   .input__checkbox-lbl {
-
     &::before {
       width: 40px;
       height: 40px;

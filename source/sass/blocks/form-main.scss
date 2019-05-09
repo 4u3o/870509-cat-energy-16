@@ -173,7 +173,6 @@
   }
 
   .form-main__group {
-
     &--bordless {
       width: calc(50% - 40px);
       padding-bottom: 0;
@@ -184,12 +183,9 @@
       width: calc(50% - 40px);
       margin: 0;
     }
-
-
   }
 
   .form-main__wrapper {
-
     &--cat {
       margin: 0;
       width: auto;
