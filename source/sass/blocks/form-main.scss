@@ -1,0 +1,234 @@
+.form-main__group {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  padding: 0;
+  margin: 0;
+
+  &--block {
+    border: 1px solid #eeeeee;
+  }
+
+  &--bordless {
+    padding-bottom: 11px;
+  }
+}
+
+.form-main__subtext {
+  @include texter($black, 14px, 18px, 400);
+  text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto 24px;
+}
+
+.form-main__legend-text {
+  @include texter ($black, 24px, 24px, 400);
+  text-align: left;
+  padding-right: 17px;
+
+  &--long {
+    width: 200px;
+  }
+}
+
+.form-main__label-text {
+  @include texter ($black, 16px, 18px, 400);
+  text-transform: uppercase;
+  margin-right: 16px;
+
+  &--owner {
+    margin-right: 12px;
+  }
+}
+
+.form-main__wrapper {
+  margin-bottom: 12px;
+  margin-top: 15px;
+
+  &--owner {
+    margin-bottom: -1px;
+    margin-top: 35px;
+  }
+
+  &--comment {
+    margin-bottom: -3px;
+    margin-top: 12px;
+  }
+
+  &--bonus {
+    margin-bottom: 28px;
+    margin-top: 7px;
+  }
+}
+
+.form-main__footnote {
+  @include texter($greyish, 14px, 16px, 400);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.form-main__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-main__subtext {
+    font-size: 20px;
+    line-height: 30px;
+    width: 630px;
+    margin-bottom: 50px;
+    padding-left: 2px;
+  }
+
+  .form-main__wrapper {
+    width: 630px;
+
+    &--cat {
+      margin-top: 16px;
+    }
+
+    &--owner {
+      margin-bottom: 44px;
+      margin-top: 57px;
+    }
+
+    &--program-type {
+      width: 574px;
+      margin-top: 19px;
+      margin-bottom: 16px;
+    }
+
+    &--comment {
+      margin-bottom: 42px;
+      margin-top: 57px;
+    }
+
+    &--bonus {
+      margin-bottom: 12px;
+      margin-top: 33px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--btn-zone {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+  }
+
+  .form-main__footnote {
+    width: calc(50% - 32px);
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .form-main__group--block {
+    width: 630px;
+    margin: 50px auto 54px;
+  }
+
+  .form-main__label-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-main__item {
+    margin-bottom: 20px;
+  }
+
+  .form-main__legend-text {
+    font-size: 36px;
+    line-height: 36px;
+
+    &--long {
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main__subtext {
+    width: 1220px;
+    padding-left: 0;
+    margin-bottom: 65px;
+  }
+
+  .form-main__cats-data {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 91px;
+  }
+
+  .form-main__group {
+    &--bordless {
+      width: calc(50% - 40px);
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    &--block {
+      width: calc(50% - 40px);
+      margin: 0;
+    }
+  }
+
+  .form-main__wrapper {
+    &--cat {
+      margin: 0;
+      width: auto;
+    }
+
+    &--program-type {
+      width: auto;
+      margin: 19px 27px 16px;
+    }
+
+    &--owner {
+      width: 1220px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 89px;
+    }
+
+    &--comment {
+      width: 1220px;
+      margin-bottom: 87px;
+    }
+
+    &--bonus {
+      width: 1220px;
+      margin-bottom: 19px;
+    }
+
+    &--btn-zone {
+      width: 1220px;
+      margin-bottom: 82px;
+    }
+  }
+
+  .form-main__item--owner {
+    width: calc(50% - 40px);
+    margin: 0;
+  }
+
+  .form-main__legend-text--long {
+    padding-right: 42px;
+  }
+
+  .form-main__footnote {
+    width: calc(50% - 43px);
+  }
+}

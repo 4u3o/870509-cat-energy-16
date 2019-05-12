@@ -29,3 +29,49 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .collaboration__conteiner {
+    padding-top: 69px;
+    padding-bottom: 58px;
+    padding-left: 41px;
+    padding-right: 36px;
+  }
+
+  .collaboration__invite {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .collaboration__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    p:first-child {
+      padding-bottom: 20px;
+      margin-top: -2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration {
+    position: relative;
+  }
+
+  .collaboration__conteiner {
+    position: absolute;
+    padding-top: 65px;
+    padding-bottom: 58px;
+    padding-left: 76px;
+    padding-right: 85px;
+    top: 95px;
+    width: 570px;
+    background-color: $white;
+  }
+
+  .collaboration__address {
+    text-align: left;
+  }
+}
