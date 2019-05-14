@@ -16,6 +16,15 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &--form {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    padding: 11px 10px 9px;
+    margin-bottom: 21px;
+  }
+
   &--grey {
     background-color: $lightgrey;
     color: $greyish;
@@ -38,10 +47,21 @@
     line-height: 20px;
     padding: 16px;
 
+    &--form {
+      width: calc(50% - 29px);
+      margin-bottom: 0;
+    }
+
     &--grey {
       font-size: 16px;
       padding: 11px 0 9px;
       margin-top: auto;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--form {
+    width: calc(50% - 41px);
   }
 }

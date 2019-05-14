@@ -1,0 +1,91 @@
+.extra-goods__wrapper {
+  padding-bottom: 35px;
+}
+
+.extra-goods__banner {
+  margin-top: 40px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 63px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 42px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.extra-goods__icon {
+  display: block;
+  width: 56px;
+  height: 61px;
+  background-image: url("../img/icon-gift.svg");
+  margin: 0 auto 62px;
+}
+
+.extra-goods__text {
+  @include texter($white, 16px, 20px, 400);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-goods__banner {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-top: 69px;
+    padding-right: 123px;
+    padding-bottom: 39px;
+    display: flex;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .extra-goods__wrapper {
+    padding-bottom: 45px;
+  }
+
+  .extra-goods__icon {
+    margin: 1px 0 64px 36px;
+  }
+
+  .extra-goods__text {
+    width: 161px;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-goods__banner {
+    width: 245px;
+    flex-direction: column;
+    margin: 0;
+    padding: 66px 42px 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .extra-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+  }
+
+  .extra-goods__icon {
+    margin: 0 auto 61px;
+  }
+
+  .extra-goods__text {
+    margin: 0;
+    text-align: center;
+  }
+}
