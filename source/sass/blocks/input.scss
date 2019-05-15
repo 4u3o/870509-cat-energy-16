@@ -138,7 +138,6 @@
 
 .input__radio-btn:focus + .input__radio-lbl::before {
   outline: 1px dotted #212121;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .input__radio-btn:checked:hover ~ .input__radio-lbl::before {
@@ -149,16 +148,12 @@
   opacity: 0.3;
 }
 
-
-
 .input__checkbox {
   position: relative;
   padding-left: 46px;
   padding-top: 11px;
   padding-bottom: 13px;
 }
-
-
 
 .input__checkbox-lbl {
   &::before {
@@ -184,7 +179,6 @@
 
 .input__checkbox-btn:focus + .input__checkbox-lbl::before {
   outline: 1px dotted #212121;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .input__checkbox-btn:checked ~ .input__checkbox-lbl::before {
