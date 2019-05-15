@@ -1,3 +1,22 @@
 .main-nav__list {
   @include list;
 }
+
+.main-nav {
+  display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.main-nav--opened {
+  display: block;
+  animation: bounce 0.2s;
+}
