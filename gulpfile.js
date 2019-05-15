@@ -33,9 +33,8 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "build"
+    server: "build/"
   });
-
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/inline-icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
