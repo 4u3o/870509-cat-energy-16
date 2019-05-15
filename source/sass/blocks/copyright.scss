@@ -4,10 +4,8 @@
   justify-content: space-between;
   text-decoration: none;
 
-  &:hover {
-    path {
-      fill: $leaf;
-    }
+  &:hover > .copyright__academy {
+    fill: $leaf;
   }
 
   &:active {
@@ -23,10 +21,7 @@
 .copyright__academy {
   width: 27px;
   height: 34px;
-
-  path {
-    fill: #666666;
-  }
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {

@@ -136,6 +136,10 @@
   border-radius: 14px;
 }
 
+.input__radio-btn:focus + .input__radio-lbl::before {
+  outline: 1px dotted #212121;
+}
+
 .input__radio-btn:checked:hover ~ .input__radio-lbl::before {
   box-shadow: 0 0 0 1px #bababa;
 }
@@ -171,6 +175,10 @@
   &:active {
     color: rgba(34, 34, 34, 0.3);
   }
+}
+
+.input__checkbox-btn:focus + .input__checkbox-lbl::before {
+  outline: 1px dotted #212121;
 }
 
 .input__checkbox-btn:checked ~ .input__checkbox-lbl::before {
