@@ -9,6 +9,11 @@
   display: flex;
   padding-top: 11px;
   padding-bottom: 12px;
+
+  &--nav {
+    margin: 0;
+    width: auto;
+  }
 }
 
 .page-header__logo img {
@@ -41,27 +46,21 @@
 
   height: 19px;
   background-color: transparent;
-}
 
-.page-header__wrapper--closed .page-header__toggle {
   width: 25px;
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
-}
 
-.page-header__wrapper--opened .page-header__toggle {
-  width: 19px;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  cursor: pointer;
-  border: none;
-  right: 2px;
-}
-
-.page-header__wrapper--closed.main-nav {
-  display: none;
+  &--opened {
+    width: 19px;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    right: 2px;
+  }
 }
 
 @media (min-width: $tablet-width) {
