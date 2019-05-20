@@ -33,11 +33,13 @@
                 <img class="page-header__logo-image--index" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
               </picture>
             </div>
+            <!-- .page-header__toggle--hidden для скрытия кнопки с открытым меню без js -->
             <button class="page-header__toggle"  type="button">
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
         </div>
+        <!-- .main-nav--opened для раскрытия меню без js -->
         <nav class="page-header__wrapper--nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -78,14 +80,14 @@
             <section class="program-selection__partition program-selection__partition--slim">
               <h2 class="program-selection__title program-selection__title--slim">Похудение</h2>
               <p class="program-selection__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program-selection__link" href="#">Каталог Slim</a>
+              <a class="program-selection__link" href="catalog-slim.html">Каталог Slim</a>
             </section>
           </li>
           <li class="program-selection__item">
             <section class="program-selection__partition program-selection__partition--pro">
               <h2 class="program-selection__title program-selection__title--pro">Набор массы</h2>
               <p class="program-selection__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program-selection__link" href="#">Каталог pro</a>
+              <a class="program-selection__link" href="catalog-pro.html">Каталог pro</a>
             </section>
           </li>
         </ul>
@@ -189,7 +191,7 @@
             </div>
           </div>
         </div>
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="360" frameborder="1" allowfullscreen="true"  title="Map"></iframe>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="360" frameborder="1" allowfullscreen="true"  title="Map" lazyload="on"></iframe>
       </div>
     </main>
     <footer class="page-footer">
@@ -230,7 +232,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__academy">
+            <svg class="copyright__academy" width="27" height="34">
               <use xlink:href="img/sprite.svg#inline-icon-htmlacademy"></use>
             </svg>
           </a>

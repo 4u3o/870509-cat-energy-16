@@ -61,6 +61,10 @@
     border: none;
     right: 2px;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

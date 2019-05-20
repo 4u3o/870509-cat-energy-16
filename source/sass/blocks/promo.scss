@@ -7,6 +7,7 @@
   min-width: 280px;
   height: auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: $leaf;
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -50,6 +51,7 @@
     width: 708px;
     height: auto;
     background-image: none;
+    background-color: none;
     padding-left: 87px;
   }
 
