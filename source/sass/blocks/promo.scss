@@ -7,7 +7,6 @@
   min-width: 280px;
   height: auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: $leaf;
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -51,7 +50,6 @@
     width: 708px;
     height: auto;
     background-image: none;
-    background-color: none;
     padding-left: 87px;
   }
 
@@ -94,6 +92,10 @@
     position: relative;
   }
 
+  .promo__section {
+    position: relative;
+  }
+
   .promo__title {
     margin-top: 41px;
     margin-left: 0;
@@ -107,7 +109,7 @@
     width: 552px;
     min-height: 499px;
     position: absolute;
-    margin: -50px 0 0 -14px;
-    left: 38%;
+    left: 50%;
+    top: 32px;
   }
 }

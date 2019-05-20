@@ -112,7 +112,7 @@
     }
   }
 
-  .index-header {
+  .page-header--index {
     &::after {
       content: "";
       position: absolute;
@@ -124,7 +124,7 @@
       background-color: #65a93c;
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: contain;
+      background-size: cover;
       z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
