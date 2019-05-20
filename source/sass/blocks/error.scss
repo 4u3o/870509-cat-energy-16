@@ -1,0 +1,82 @@
+.error {
+  border: solid 2px #ff8282;
+  padding: 11px 12px 12px;
+
+  &:hover {
+    padding: 12px 13px 13px;
+  }
+
+  &--mail:hover {
+    padding-right: 15px;
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &--phone:hover {
+    padding-right: 11px;
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--mail {
+    padding-right: 14px;
+    background-image: url("../img/icon-mail-error.svg");
+  }
+
+  &--phone {
+    padding-right: 10px;
+    background-image: url("../img/icon-phone-error.svg");
+  }
+
+  &:focus {
+    outline: none;
+    padding: 11px 12px 12px;
+  }
+
+  &--mail:focus {
+    padding-right: 14px;
+    background-image: url("../img/icon-mail-active.svg");
+  }
+
+  &--phone:focus {
+    padding-right: 10px;
+    background-image: url("../img/icon-phone-active.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .error {
+    border: solid 2px #ff8282;
+    padding: 8px 17px 10px;
+
+    &:hover {
+      padding: 9px 18px 11px;
+    }
+
+    &--mail:hover {
+      padding-right: 19px;
+    }
+
+    &--phone:hover {
+      padding-right: 17px;
+    }
+
+    &--mail {
+      padding-right: 18px;
+    }
+
+    &--phone {
+      padding-right: 16px;
+    }
+
+    &:focus {
+      padding: 8px 17px 10px;
+    }
+
+    &--mail:focus {
+      padding-right: 18px;
+    }
+
+    &--phone:focus {
+      padding-right: 16px;
+    }
+  }
+}
