@@ -105,14 +105,11 @@
 @media (min-width: $desktop-width) {
   .page-header__section {
     width: 1220px;
-    padding: 53px 0 54px;
-
-    &--cat {
-      padding: 44px 0 44px;
-    }
+    padding: 53px 0 75px;
   }
 
   .page-header__wrapper {
+    margin-top: 0;
     padding: 0;
   }
 
@@ -122,6 +119,7 @@
       position: absolute;
       width: 50%;
       height: 81.5%;
+      max-height: 696px;
       top: 0;
       right: 0;
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -138,6 +136,6 @@
   }
 
   .page-header__logo img {
-    width: 203px;
+    width: 202px;
   }
 }

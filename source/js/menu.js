@@ -1,6 +1,9 @@
 var link = document.querySelector(".page-header__toggle");
 var menu = document.querySelector(".main-nav");
 
+link.classList.remove("page-header__toggle--hidden");
+menu.classList.remove("main-nav--opened");
+
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (link.classList.contains("page-header__toggle--opened")) {

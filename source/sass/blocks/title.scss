@@ -1,6 +1,10 @@
 .title {
   @include texter($black, 36px, 60px, 400);
   margin: 0;
+
+  &--form {
+    margin-bottom: 26px;
+  }
 }
 
 @media (min-width: $tablet-width) {

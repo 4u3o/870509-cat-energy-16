@@ -88,12 +88,12 @@
 @media (min-width: $desktop-width) {
   .promo {
     width: 1220px;
-    padding: 0 0 268px 80px;
-    position: relative;
+    padding: 34px 0 268px 80px;
   }
 
   .promo__section {
     position: relative;
+    width: auto;
   }
 
   .promo__title {
@@ -103,13 +103,15 @@
 
   .promo__button {
     margin-top: 6px;
+    text-align: left;
+    padding: 15px 24px 17px;
   }
 
   .promo__product {
     width: 552px;
     min-height: 499px;
     position: absolute;
-    left: 50%;
-    top: 32px;
+    left: 40%;
+    top: 0;
   }
 }

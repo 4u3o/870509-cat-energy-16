@@ -1,6 +1,6 @@
 .program-selection__list {
   padding: 0;
-  margin-top: 22px;
+  margin: 22px 0 18px;
 }
 
 .program-selection__item {
@@ -51,10 +51,10 @@
 .program-selection__description {
   @include texter($greyish, 14px, 18px, 400);
   font-family: "Arial", sans-serif;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #dadada;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .program-selection__link {
@@ -122,8 +122,8 @@
 
   .program-selection__description {
     @include texter($greyish, 16px, 24px, 400);
-    margin-top: 25px;
-    margin-bottom: 37px;
+    margin-top: 26px;
+    margin-bottom: 35px;
     border-bottom: none;
   }
 

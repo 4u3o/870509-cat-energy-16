@@ -23,7 +23,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <div class="page-header__section page-header__section--cat">
+      <div class="page-header__section">
         <div class="page-header__border">
           <div class="page-header__wrapper page-header__wrapper--closed">
             <a class="page-header__logo" href="index.html">
@@ -33,12 +33,14 @@
                 <img src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
               </picture>
             </a>
-            <button class="page-header__toggle"  type="button">
+            <!-- класс page-header__toggle--hidden для скрытия кнопки с открытым меню без js -->
+            <button class="page-header__toggle page-header__toggle--hidden"  type="button">
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
         </div>
-        <nav class="page-header__wrapper page-header__wrapper--nav main-nav">
+        <!-- .main-nav--opened для раскрытия меню без js -->
+        <nav class="page-header__wrapper page-header__wrapper--nav main-nav main-nav--opened">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="link" href="index.html">Главная</a>
@@ -466,7 +468,7 @@
             </div>
           </div>
         </div>
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="360" allowfullscreen="true" title="Map" lazyload="on"></iframe>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="363" allowfullscreen="true" title="Map" lazyload="on"></iframe>
       </div>
     </main>
     <footer class="page-footer">

@@ -33,12 +33,14 @@
                 <img src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
               </picture>
             </a>
-            <button class="page-header__toggle"  type="button">
+            <!-- класс page-header__toggle--hidden для скрытия кнопки с открытым меню без js -->
+            <button class="page-header__toggle page-header__toggle--hidden"  type="button">
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
         </div>
-        <nav class="page-header__wrapper page-header__wrapper--nav main-nav">
+        <!-- .main-nav--opened для раскрытия меню без js -->
+        <nav class="page-header__wrapper page-header__wrapper--nav main-nav main-nav--opened">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="link" href="index.html">Главная</a>
@@ -119,7 +121,7 @@
             <div class="title-bg">
               <span class="title-bg__line title-bg__line--form"></span>
               <div class="title-bg__wrapper title-bg__wrapper--form wrapper">
-                <h2 class="form-main__legend-text title-bg__sideline">Комментарий</h2>
+                <h2 class="form-main__legend-text form-main__legend-text--comment title-bg__sideline">Комментарий</h2>
               </div>
             </div>
             <div class="form-main__wrapper form-main__wrapper--comment wrapper">
@@ -131,7 +133,7 @@
             <div class="title-bg">
               <span class="title-bg__line title-bg__line--form"></span>
               <div class="title-bg__wrapper title-bg__wrapper--form wrapper">
-                <h2 class="form-main__legend-text title-bg__sideline">Дополнительно</h2>
+                <h2 class="form-main__legend-text form-main__legend-text--bonus title-bg__sideline">Дополнительно</h2>
               </div>
             </div>
             <ul class="list form-main__wrapper form-main__wrapper--bonus wrapper">
@@ -171,7 +173,7 @@
             </div>
           </div>
         </div>
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="360" allowfullscreen="true" title="Map" lazyload="on"></iframe>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CCVOVL25" width="320" height="363" allowfullscreen="true" title="Map" lazyload="on"></iframe>
       </div>
     </main>
     <footer class="page-footer">

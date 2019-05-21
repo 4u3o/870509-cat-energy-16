@@ -16,8 +16,11 @@
 
   .site-list__item {
     border-bottom: none;
-    padding: 20px 0;
-    margin-left: 35px;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 
   .site-list__item:first-child {

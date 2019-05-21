@@ -78,7 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .advantage {
-    padding-bottom: 38px;
+    padding-bottom: 36px;
     border-bottom: 1px solid #e7e7e7;
   }
 
@@ -94,7 +94,7 @@
 
   .advantage__icon {
     @include sizer(80px);
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 
     &--use {
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

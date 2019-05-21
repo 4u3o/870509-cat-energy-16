@@ -101,3 +101,10 @@
     @include texter($greyish, 16px, 16px, 400);
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .item-card__image {
+    bottom: 303px;
+  }
+}

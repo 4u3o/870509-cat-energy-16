@@ -53,14 +53,14 @@
     font-size: 36px;
     line-height: 36px;
     top: -22px;
-    padding-left: 37px;
+    padding-left: 39px;
     padding-right: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .title-bg__line {
-    margin-top: 98px;
+    margin-top: 97px;
 
     &--form {
       margin-top: 0;
@@ -72,6 +72,7 @@
   }
 
   .title-bg__sideline {
-    margin-left: -38px;
+    padding-left: 39px;
+    margin-left: -40px;
   }
 }

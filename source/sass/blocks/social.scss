@@ -19,6 +19,11 @@
   }
 }
 
+.social__link {
+  display: block;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     margin-right: 0;
