@@ -275,6 +275,12 @@
     }
   }
 
+  .form-main__label-text {
+    &--owner(:not(:last-child)) {
+      margin-right: 22px;
+    }
+  }
+
   .form-main__wrapper {
     &--cat {
       margin: 0;
