@@ -175,14 +175,16 @@
     overflow: hidden;
   }
 
-  .example__pic--fat {
+  .example__pic {
     max-width: none;
-    transform: scale(1) translate(2.5%);
-  }
 
-  .example__pic--skiny {
-    max-width: none;
-    transform: translate(-49%);
+    &--fat {
+      transform: scale(1) translate(2.5%);
+    }
+
+    &--skiny {
+      transform: translate(-49%);
+    }
   }
 
   .example__bg {
@@ -241,14 +243,14 @@
     width: 708px;
   }
 
-  .example__pic--fat {
-    max-width: none;
-    transform: translate(-1.5%);
-  }
+  .example__pic {
+    &--fat {
+      transform: translate(-1.5%);
+    }
 
-  .example__pic--skiny {
-    max-width: none;
-    transform: translate(-53%);
+    &--skiny {
+      transform: translate(-53%);
+    }
   }
 
   .example__title {

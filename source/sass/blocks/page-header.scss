@@ -105,11 +105,15 @@
 @media (min-width: $desktop-width) {
   .page-header__section {
     width: 1220px;
-    padding: 44px 0 63px;
+    padding: 53px 0 54px;
 
     &--cat {
       padding: 44px 0 44px;
     }
+  }
+
+  .page-header__wrapper {
+    padding: 0;
   }
 
   .page-header--index {

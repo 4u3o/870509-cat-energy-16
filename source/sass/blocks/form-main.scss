@@ -42,6 +42,55 @@
   }
 }
 
+.form-main__input-string {
+  @include texter($greyish, 16px, 18px, 400);
+  text-transform: uppercase;
+  padding: 12px 13px 13px;
+  flex-grow: 1;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border: solid 2px #444444;
+    outline: none;
+    padding: 11px 12px 12px;
+  }
+
+  &--mail:focus {
+    padding-right: 14px;
+    background-image: url("../img/icon-mail-active.svg");
+  }
+
+  &--phone:focus {
+    padding-right: 10px;
+    background-image: url("../img/icon-phone-active.svg");
+  }
+
+  &--area {
+    width: 100%;
+    height: 150px;
+  }
+
+  &--mail {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px 14px;
+    padding-right: 15px;
+    background-position: right 2px;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 21px 21px;
+    padding-right: 11px;
+    background-position: right;
+  }
+}
+
 .form-main__wrapper {
   margin-bottom: 12px;
   margin-top: 15px;
@@ -144,6 +193,47 @@
     line-height: 20px;
   }
 
+  .form-main__input-string {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 9px 18px 11px;
+
+    &:focus {
+      border: solid 2px #444444;
+      outline: none;
+      padding: 8px 17px 10px;
+    }
+
+    &--mail:focus {
+      padding-right: 18px;
+    }
+
+    &--phone:focus {
+      padding-right: 16px;
+    }
+
+    &--area:focus {
+      padding-top: 13px;
+      padding-bottom: 12px;
+    }
+
+    &--area {
+      height: 174px;
+      padding-top: 14px;
+      padding-bottom: 13px;
+    }
+
+    &--mail {
+      padding-right: 19px;
+      background-position: right 9px;
+    }
+
+    &--phone {
+      padding-right: 17px;
+      background-position: right 6px;
+    }
+  }
+
   .form-main__item {
     margin-bottom: 20px;
   }
@@ -162,7 +252,7 @@
   .form-main__subtext {
     width: 1220px;
     padding-left: 0;
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 
   .form-main__cats-data {

@@ -1,0 +1,87 @@
+.radio {
+  position: relative;
+  padding-left: 46px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.radio__btn:checked ~ .radio__lbl::before {
+  top: 6px;
+  left: 1px;
+  width: 28px;
+  height: 28px;
+  border: 8px solid $white;
+  box-shadow: 0 0 0 1px #cdcdcd;
+  background-color: $leaf;
+  border-radius: 14px;
+}
+
+.radio__btn:focus + .radio__lbl::before {
+  outline: 1px dotted #212121;
+}
+
+.radio__btn:checked:hover ~ .radio__lbl::before {
+  box-shadow: 0 0 0 1px #bababa;
+}
+
+.radio__btn:checked:active ~ .radio__lbl::before {
+  opacity: 0.3;
+}
+
+.radio__lbl {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 15px;
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+  }
+
+  &:active::before {
+    border-color: rgba(186, 186, 186, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .radio {
+    padding-left: 60px;
+    padding-top: 14px;
+    padding-bottom: 18px;
+  }
+
+  .radio__btn:checked ~ .radio__lbl::before {
+    top: 6px;
+    left: 1px;
+    width: 38px;
+    height: 38px;
+    border: 10px solid $white;
+    box-shadow: 0 0 0 1px #cdcdcd;
+    background-color: $leaf;
+    border-radius: 19px;
+  }
+
+  .radio__lbl {
+    &::before {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #cdcdcd;
+      border-radius: 20px;
+      top: 5px;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+}
