@@ -1,16 +1,71 @@
 .map {
+  position: relative;
+  width: 100%;
+  min-height: 363px;
+}
+
+.map__static {
+  min-width: 100%;
+  max-height: 363px;
+
+  &--disabled {
+    display: none;
+  }
+}
+
+.map__pin {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 55px;
+  height: 53px;
+
+  &--disabled {
+    display: none;
+  }
+}
+
+.map__js {
   min-width: 100%;
   border: none;
+
+  &--disabled {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .map {
+  .map__js {
     min-height: 397px;
+  }
+
+  .map__pin {
+    top: 45%;
+    left: 45%;
+    width: 113px;
+    height: 106px;
+  }
+
+  .map__static {
+    max-height: 397px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
+  .map__js {
     min-height: 398px;
+  }
+
+  .map {
+    position: static;
+  }
+
+  .map__pin {
+    top: 39%;
+    left: 70%;
+  }
+
+  .map__static {
+    max-height: 398px;
   }
 }
